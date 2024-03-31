@@ -183,7 +183,7 @@ export default function Home() {
 
           </section>
         </div>) : (
-        <div className="px-24 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
+        <div className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
           {/* 返回键 */}
           <header className="flex justify-between items-center"
             style={{
