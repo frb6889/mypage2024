@@ -75,14 +75,14 @@ export function FileMind() {
                     Filemind</h1>
                 <div>
                     <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
-                        <Card className="w-[350px]">
+                        <Card className="w-[450px]">
                             <CardHeader>
                                 <CardTitle>Working Process</CardTitle>
                                 <CardDescription>Started In November 2023
                                     <br />Lasted for 10 Months</CardDescription>
                             </CardHeader>
                         </Card>
-                        <Card className="w-[350px]">
+                        <Card className="w-[450px]">
                             <CardHeader>
                                 <CardTitle>Our Team</CardTitle>
                                 <CardDescription>5 Developers
@@ -90,7 +90,7 @@ export function FileMind() {
                                     <br />1 Designer(me)</CardDescription>
                             </CardHeader>
                         </Card>
-                        <Card className="w-[350px]">
+                        <Card className="w-[450px]">
                             <CardHeader>
                                 <CardTitle>My Role As Design Lead</CardTitle>
                                 <CardDescription>
@@ -104,7 +104,7 @@ export function FileMind() {
 
                     </div>
                 </div>
-                <Image src="./filemind_research.png" alt="filemind-research" width={600} />
+                <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
 
 
             </section>
