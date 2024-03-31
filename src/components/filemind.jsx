@@ -105,6 +105,8 @@ export function FileMind() {
                     </div>
                 </div>
                 <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
+                <Image src="./filemind_design.png" alt="filemind-design" width={1500} />
+
 
 
             </section>
