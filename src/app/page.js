@@ -191,7 +191,7 @@ export default function Home() {
               margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
-            <Image src="./back.png" onClick={() => handleClick()} alt="Logo" width={40} height={40} />
+            <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
           </header>
           {selectedComponent === 'FileMind' ? <FileMind /> : <InHunt />}
         </div>
