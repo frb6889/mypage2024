@@ -64,8 +64,8 @@ export default function Home() {
 
             <div className="flex gap-8">
 
-              <Button>Resume</Button>
-              <Button>About</Button>
+             {/*  <Button>Resume</Button>
+              <Button>About</Button> */}
 
               <button onClick={toLinkedIn} className="flex items-center gap-2">
                 <FaLinkedin size={20} />
