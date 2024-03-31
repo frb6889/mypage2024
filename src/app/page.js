@@ -14,6 +14,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
 import DoneComponent from "@/components/done"
 import FileMind from "@/components/filemind"
+import InHunt from "@/components/inhunt"
 
 
 
@@ -31,10 +32,13 @@ export default function Home() {
   }
 
   const [showReview, setShowReview] = React.useState(false);
+  const [selectedComponent, setSelectedComponent] = React.useState(null);
+
 
   // 点击表格中的 "accounting" 单元格时，显示新的界面
-  const handleClick = () => {
-    setShowReview(prevState => !prevState); // 切换状态的值
+  const handleClick = (component) => {
+    setShowReview(true); // Set showReview to true to display review section
+    setSelectedComponent(component); // Set the selected component
   };
 
   const [open, setOpen] = React.useState(false)
@@ -117,7 +121,7 @@ export default function Home() {
                 A Data Management Assistant tailored for financial systems,
                 streamlining the organization and control of data tables for enhanced efficiency.
               </h1>
-              <Button style={{ marginTop: '20px' }}>Click to see more</Button>
+              <Button sclassName="inhuntButton" tyle={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
           </section>
 
@@ -188,7 +192,7 @@ export default function Home() {
             }}>
             <Image src="./back.png" onClick={() => handleClick()} alt="Logo" width={40} height={40} />
           </header>
-          <FileMind />
+          {selectedComponent === 'FileMind' ? <FileMind /> : <InHunt />}
         </div>
       )}
     </main>
