@@ -119,7 +119,7 @@ export default function Home() {
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
               </p>
               <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-                An app for
+              InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
               </h1>
               <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
 
           </section>
         </div>) : (
-        <div className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
+        <div style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
           {/* 返回键 */}
           <header className="flex justify-between items-center"
             style={{
