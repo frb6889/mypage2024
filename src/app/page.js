@@ -79,7 +79,7 @@ export default function Home() {
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
-          {/* project1 */}
+          {/* filemind */}
           <section className="px-14 gap-8 flex items-center py-10">
             <div className="Container">
               <AspectRatioDemo />
@@ -95,16 +95,17 @@ export default function Home() {
                 A Data Management Assistant tailored for financial systems,
                 streamlining the organization and control of data tables for enhanced efficiency.
               </h1>
-              <Button style={{ marginTop: '20px' }} onClick={() => handleClick()}>Click to see more</Button>
+              <Button style={{ marginTop: '20px' }} onClick={() => handleClick(FileMind)}>Click to see more</Button>
             </div>
           </section>
 
+          {/* inhunt */}
           <section className="px-14 gap-8 flex items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
                 <Image
                   //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-                  src="/inhunt.png"
+                  src="./inhunt.png"
                   alt="Photo by Drew Beamer"
                   fill
                   className="rounded-md object-contain"
@@ -121,7 +122,7 @@ export default function Home() {
                 A Data Management Assistant tailored for financial systems,
                 streamlining the organization and control of data tables for enhanced efficiency.
               </h1>
-              <Button sclassName="inhuntButton" tyle={{ marginTop: '20px' }}>Click to see more</Button>
+              <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
           </section>
 
