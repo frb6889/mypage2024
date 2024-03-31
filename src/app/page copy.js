@@ -9,7 +9,6 @@ import { AspectRatioDemo } from "@/components/apic"
 import './style.css';
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
-import DoneComponent from "@/components/done"
 
 
 
@@ -60,7 +59,7 @@ export default function Home() {
         <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
       </section>
 
-      <section className="px-14 gap-8 flex items-center py-10">
+      <section className="px-14 gap-8 flex items-center">
         <div className="Container">
           <AspectRatioDemo />
         </div>
@@ -78,59 +77,6 @@ export default function Home() {
           <Button style={{ marginTop: '20px' }} onClick={toFileMind}>Click to see more</Button>
         </div>
       </section>
-
-      <section className="px-14 gap-8 flex items-center py-10">
-        <div className="Container">
-        <AspectRatio ratio={4 / 3} className=" w-30">
-      <Image
-      //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-        src="/inhunt.png"
-        alt="Photo by Drew Beamer"
-        fill
-        className="rounded-md object-contain"
-      />
-    </AspectRatio>
-        </div>
-        <div className="Container flex-col gap-10 items-left">
-          
-          <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">Inhunt</h1>
-          <DoneComponent />
-          <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
-          </p>
-          <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-            A Data Management Assistant tailored for financial systems, 
-            streamlining the organization and control of data tables for enhanced efficiency.
-          </h1>
-          <Button style={{ marginTop: '20px' }} onClick={toFileMind}>Click to see more</Button>
-        </div>
-      </section>
-
-      <section className="px-14 gap-8 flex items-center py-10">
-        <div className="Container">
-        <AspectRatio ratio={4 / 3} className=" w-30">
-      <Image
-      //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-        src="/eno.png"
-        alt="Photo by Drew Beamer"
-        fill
-        className="rounded-md object-contain"
-      />
-    </AspectRatio>
-        </div>
-        <div className="Container flex-col gap-10 items-left">
-          
-          <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">Eno</h1>
-          <DoneComponent />
-          <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
-          </p>
-          <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-            A Data Management Assistant tailored for financial systems, 
-            streamlining the organization and control of data tables for enhanced efficiency.
-          </h1>
-          <Button style={{ marginTop: '20px' }} onClick={toFileMind}>Click to see more</Button>
-        </div>
-      </section>
-
       <section className="py-10 px-14 gap-2 flex items-center">
       <div style={{width:200+'px',}}>
         <AspectRatio ratio={4 / 3} className=" w-30" >
