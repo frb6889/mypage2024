@@ -33,7 +33,9 @@ export default function Home() {
 
   return (
 
-    {/* <main className="px-24 py-2">
+    
+    <main>
+      {/* <main className="px-24 py-2">
 
       <header className="flex justify-between items-center" 
       style={{position:'fixed',border:'0.4px solid #dddddd',
@@ -164,7 +166,10 @@ export default function Home() {
       </section>
 
     </main> */}
-    <MainPage />
+      <MainPage />
+    </main>
+
+    
     
   );
 }
