@@ -40,7 +40,7 @@ export default function Home() {
       backdropFilter: 'blur(8px)',backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
         <div className="flex items-center">
           <Image
-            src="/head.png" alt="Logo" width={60} height={60} />
+            src="./head.png" alt="Logo" width={60} height={60} />
         </div>
 
 
@@ -110,7 +110,7 @@ export default function Home() {
         <AspectRatio ratio={4 / 3} className=" w-30">
       <Image
       //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-        src="/eno.png"
+        src="./eno.png"
         alt="Photo by Drew Beamer"
         fill
         className="rounded-md object-contain"
@@ -136,7 +136,7 @@ export default function Home() {
         <AspectRatio ratio={4 / 3} className=" w-30" >
           <Image
             //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-            src="/head.png"
+            src="./head.png"
             alt="Photo by Drew Beamer"
             width={300}
             height={200}
