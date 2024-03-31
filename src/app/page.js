@@ -145,11 +145,11 @@ export default function Home() {
         </AspectRatio>
         </div>
         <div className="py-24 px-10 flex flex-col item-center text-left gap-3">
-          <h1 className="scroll-m-20 text-4xl font-extrabold  lg:text-2xl">Hi,I'm Erana.</h1>
+          <h1 className="scroll-m-20 text-4xl font-extrabold  lg:text-2xl">Hi,I am Erana.</h1>
           <p className="text-2x1 text-muted-foreground">
             Since I am a non-binary, you can also call me Eran.
             <br />
-            I'm a student at Tsinghua University, studying Information Art and Design.
+            I am a student at Tsinghua University, studying Information Art and Design.
             <br />
             I got into design and coding because I wanted to create tools that actually make life easier.
             Over time, this has also become a way for my self-expression.

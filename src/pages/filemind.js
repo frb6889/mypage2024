@@ -79,7 +79,7 @@ export default function Filemind() {
           margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
           backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
         }}>
-        <img src="/back.png" className="" onClick={toHome} style={{ cursor: "pointer", width: "40px" }}></img>
+        <Image src="/back.png" alt="Logo" width={40} height={40} />
       </header>
 
       {/* page */}
@@ -117,7 +117,8 @@ export default function Filemind() {
 
           </div>
         </div>
-        <img src="/filemind_research.png" alt="filemind-research"></img>
+        <Image src="/filemind_research.png" alt="filemind-research" width={600}  />
+
       
       </section>
 
