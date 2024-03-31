@@ -95,7 +95,7 @@ export default function Home() {
                 A Data Management Assistant tailored for financial systems,
                 streamlining the organization and control of data tables for enhanced efficiency.
               </h1>
-              <Button style={{ marginTop: '20px' }} onClick={() => handleClick(FileMind)}>Click to see more</Button>
+              <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
             </div>
           </section>
 
