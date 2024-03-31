@@ -119,13 +119,13 @@ export default function Home() {
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
               </p>
               <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-                A Data Management Assistant tailored for financial systems,
-                streamlining the organization and control of data tables for enhanced efficiency.
+                An app for
               </h1>
               <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
           </section>
 
+          {/* eno */}
           <section className="px-14 gap-8 flex items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
@@ -145,10 +145,9 @@ export default function Home() {
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
               </p>
               <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-                A Data Management Assistant tailored for financial systems,
-                streamlining the organization and control of data tables for enhanced efficiency.
+                An app for gen-z mental problems.
               </h1>
-              <Button style={{ marginTop: '20px' }}>Click to see more</Button>
+              <Button variant="secondary" style={{ marginTop: '20px' }}>still working...</Button>
             </div>
           </section>
 
