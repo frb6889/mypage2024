@@ -67,7 +67,7 @@ export function FileMind() {
 
 
     return (
-        <main className="px-24 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
+        <main className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
 
             {/* page */}
             <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
@@ -104,12 +104,13 @@ export function FileMind() {
 
                     </div>
                 </div>
-                <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
-                <Image src="./filemind_design.png" alt="filemind-design" width={1500} />
+                
 
 
 
             </section>
+            <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
+            <Image src="./filemind_design.png" alt="filemind-design" width={1500} />
 
 
         </main>
