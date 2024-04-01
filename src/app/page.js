@@ -58,7 +58,7 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              width: '80%', marginLeft: '10%',marginRight: '10%', marginTop: '-10%', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
+              width: '80%', marginLeft: '10%',marginRight: '10%', marginTop: '-40px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <div className="flex items-center">
@@ -79,15 +79,23 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center">
+          <section className="flex-col justify-between items-center" style={{marginLeft:'16%'}}>
             <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
           {/* filemind */}
           <section className="flex-col justify-between items-center lg:px-20 md:px-14 sm:px-8 py-10">
-            <div className="">
-              <AspectRatioDemo />
+            <div className="Container">
+              <AspectRatio ratio={4 / 3} className="w-30">
+                <Image
+                  //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+                  src="./filemind.png"
+                  alt="Photo by Drew Beamer"
+                  fill
+                  className="rounded-md object-contain"
+                />
+              </AspectRatio>
             </div>
             <div className="flex-col gap-10 items-left">
               <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">FileMind</h1>
