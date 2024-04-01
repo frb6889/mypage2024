@@ -87,7 +87,7 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl" style={{margin:'6%'}}>
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
@@ -156,7 +156,22 @@ export default function Home() {
           </section> */}
 
           {/* eno */}
-          <section className="px-14 gap-8 flex-col items-center py-10">
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <div className="md:shrink-0">
+                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./eno1.png" alt="" />
+              </div>
+              <div class="p-8">
+                <a class="block mt-1 leading-tight text-2xl font-bold text-black">Eno</a>
+                <DoneComponent />
+                <p class="mt-2 text-slate-500 text-primary">
+                An app for gen-z mental problems.
+                </p>
+              <Button variant="secondary" style={{ marginTop: '20px' }}>still working...</Button>
+              </div>
+            </div>
+          </div>
+          {/* <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
                 <Image
@@ -179,7 +194,7 @@ export default function Home() {
               </h1>
               <Button variant="secondary" style={{ marginTop: '20px' }}>still working...</Button>
             </div>
-          </section>
+          </section> */}
 
           <section className="py-10 px-14 gap-2 flex items-center">
             <div style={{ width: 200 + 'px', }}>
