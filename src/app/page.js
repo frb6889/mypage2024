@@ -136,7 +136,7 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-48 w-48 object-cover" src="./eno1.png" alt="" />
+                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./eno1.png" alt="" />
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-2xl font-bold text-black">Eno</a>
@@ -153,9 +153,11 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./head.png" alt="" />
+             
+                <img className="h-48 w-48 object-cover" src="./head.png" alt="" />
               </div>
               <div class="p-8">
+                
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
 
                 <p class="mt-2 text-slate-500 text-2x1 text-muted-foreground">
