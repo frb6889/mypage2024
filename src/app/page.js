@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
 
-    <main className="w-160 md:w-320 lg:w-480 py-2">
+    <main className="sm:w-80 md:w-200 lg:w-480 py-2">
       {!showReview ? (
         <div className="mainpage">
           <header className="flex justify-between items-center"
@@ -99,7 +99,7 @@ export default function Home() {
           </section>
 
           {/* inhunt */}
-          <section className="px-14 gap-8 flex items-center py-10">
+          <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
                 <Image
@@ -125,7 +125,7 @@ export default function Home() {
           </section>
 
           {/* eno */}
-          <section className="px-14 gap-8 flex items-center py-10">
+          <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
                 <Image
