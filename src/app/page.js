@@ -58,7 +58,7 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              width: '80%', marginLeft: '10%',marginRight: '10%', marginTop: '0', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
+              width: '80%', marginLeft: '10%',marginRight: '10%', marginTop: '-10%', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <div className="flex items-center">
@@ -85,7 +85,7 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <section className="flex-col justify-between items-center">
+          <section className="flex-col justify-between items-center lg:px-20 md:px-14 sm:px-8 py-10">
             <div className="">
               <AspectRatioDemo />
             </div>
