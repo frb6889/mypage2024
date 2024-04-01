@@ -88,8 +88,7 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-48 w-full object-cover md:h-full md:w-100" src="./filemind.png" alt="" />
-                
+                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
               </div>
               <div class="p-8">
                 <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black">FileMind</a>
