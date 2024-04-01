@@ -55,7 +55,7 @@ export default function Home() {
     <main className="sm:w-80 md:w-200 lg:w-480 py-2">
       {!showReview ? (
         <div className="mainpage">
-          <header className="flex-col justify-between items-center"
+          <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
               width: '80%', marginLeft: '10%',marginRight: '10%', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
@@ -85,7 +85,7 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <section className="flex justify-between items-center">
+          <section className="flex-col justify-between items-center">
             <div className="Container">
               <AspectRatioDemo />
             </div>
