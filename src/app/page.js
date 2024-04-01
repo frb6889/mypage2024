@@ -48,6 +48,8 @@ export default function Home() {
 
   const [open, setOpen] = React.useState(false)
 
+  const resumePdfUrl = "./resume_CN.pdf";
+
 
 
   return (
@@ -69,8 +71,8 @@ export default function Home() {
 
             <div className="flex gap-8">
 
-              {/*  <Button>Resume</Button>
-              <Button>About</Button> */}
+              <Button onClick={() => window.open(resumePdfUrl, '_blank')}>Resume</Button>
+              {/*  <Button>About</Button> */}
 
               <button onClick={toLinkedIn} className="flex items-center gap-2">
                 <FaLinkedin size={20} />
@@ -79,7 +81,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl flex-col justify-between items-center">
+          <section className="flex-col justify-between items-center">
             <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
