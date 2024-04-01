@@ -57,6 +57,8 @@ export default function Home() {
     <main className="py-2">
       {!showReview ? (
         <div className="mainpage">
+
+          {/* header */}
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
@@ -79,6 +81,8 @@ export default function Home() {
             </div>
           </header>
 
+
+            <div className="h-300"></div>
           {/* my info */}
           <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{marginTop:'50px',marginBottom:'50px'}}>
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
@@ -153,7 +157,7 @@ export default function Home() {
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-              <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me1.jpg" alt="my photo" />
+              <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me.png" alt="my photo" />
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
