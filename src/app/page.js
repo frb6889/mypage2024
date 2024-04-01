@@ -88,13 +88,21 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="Modern building architecture" />
+                <img className="h-48 w-full object-cover md:h-full md:w-100" src="./filemind.png" alt="" />
                 
               </div>
               <div class="p-8">
-                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-                <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black">FileMind</a>
+                <InProgressComponent />
+                <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#Landing Project
+                </p>
+                <p onClick={toPIgroupWebsite} className="text-muted-foreground mt-2 text-slate-500 hover:underline" style={{ cursor: 'pointer' }}>
+                  #Tsinghua University Pervasive HCI Group</p>
+                <p class="mt-2 text-slate-500">
+                A Data Management Assistant tailored for financial systems,
+                streamlining the organization and control of data tables for enhanced efficiency.
+                </p>
+                <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
               </div>
             </div>
           </div>
