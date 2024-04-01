@@ -153,7 +153,7 @@ export default function Home() {
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-              <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me1.png" alt="my photo" />
+              <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me1.jpg" alt="my photo" />
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
