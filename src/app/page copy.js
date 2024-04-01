@@ -105,11 +105,34 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+          {/* <section className="flex-col justify-between items-center lg:px-20 md:px-14 sm:px-8 py-10">
+            <div className="Container">
+              <AspectRatio ratio={4 / 3} className="w-30">
+                <Image
+                  //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+                  src="./filemind.png"
+                  alt="Photo by Drew Beamer"
+                  fill
+                  className="rounded-md object-contain"
+                />
+              </AspectRatio>
+            </div>
+            <div className="flex-col gap-10 items-left">
+              <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">FileMind</h1>
+              <InProgressComponent />
+              <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Landing Project
+              </p>
+              <p onClick={toPIgroupWebsite} className="text-muted-foreground lg:text-2l" style={{ cursor: 'pointer' }}>#Tsinghua University Pervasive HCI Group</p>
+              <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
+                A Data Management Assistant tailored for financial systems,
+                streamlining the organization and control of data tables for enhanced efficiency.
+              </h1>
+              <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
+            </div>
+          </section> */}
 
           {/* inhunt */}
-          
-          {/* <section className="px-14 gap-8 flex-col items-center py-10">
+          <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
                 <Image
@@ -132,7 +155,7 @@ export default function Home() {
               </h1>
               <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
-          </section> */}
+          </section>
 
           {/* eno */}
           <section className="px-14 gap-8 flex-col items-center py-10">
