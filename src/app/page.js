@@ -86,10 +86,10 @@ export default function Home() {
 
           {/* filemind */}
           <section className="flex-col justify-between items-center">
-            <div className="Container">
+            <div className="">
               <AspectRatioDemo />
             </div>
-            <div className="Container flex-col gap-10 items-left">
+            <div className="flex-col gap-10 items-left">
               <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">FileMind</h1>
               <InProgressComponent />
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Landing Project
