@@ -75,7 +75,7 @@ export default function Home() {
 
           {/* my info */}
           <section className="py-24 px-10 flex flex-col item-center text-left gap-3">
-            <h1 className="scroll-m-20 text-4xl font-extrabold  lg:text-4xl" style={{ marginTop: '60px' }}>Erana(Yuran) Su</h1>
+            <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '60px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
