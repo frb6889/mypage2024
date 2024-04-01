@@ -80,7 +80,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center">
+          <section className="max-w-md mx-auto flex-col justify-between items-center">
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
                   <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
@@ -153,8 +153,7 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-             
-                <img className="h-48 w-48 object-cover" src="./head.png" alt="" />
+              <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me1.png" alt="my photo" />
               </div>
               <div class="p-8">
                 
