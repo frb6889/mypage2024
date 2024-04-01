@@ -81,16 +81,11 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
-            <div className="md:flex">
-              <div class="p-8">
-                <section className="flex-col justify-between items-center">
+          <section className="flex-col justify-between items-center md:flex">
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
                   <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
-                </section>
-              </div>
-            </div>
-          </div>
+          </section>
+          
 
 
           {/* filemind */}
@@ -142,7 +137,7 @@ export default function Home() {
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
-                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./eno1.png" alt="" />
+                <img className="h-48 w-48 object-cover" src="./eno1.png" alt="" />
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-2xl font-bold text-black">Eno</a>
