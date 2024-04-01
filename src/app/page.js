@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
 
-    <main className="sm:w-80 md:w-200 lg:w-480 py-2">
+    <main className="sm:w-80 md:w-600 lg:w-900 py-2">
       {!showReview ? (
         <div className="mainpage">
           <header className="flex justify-between items-center"
@@ -80,7 +80,7 @@ export default function Home() {
 
           {/* my info */}
           <section className="flex-col justify-between items-center">
-            <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '60px' }}>Erana(Yuran) Su</h1>
+            <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
