@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
 
-    <main className="w-16 md:w-32 lg:w-48 py-2">
+    <main className="w-160 md:w-320 lg:w-480 py-2">
       {!showReview ? (
         <div className="mainpage">
           <header className="flex justify-between items-center"
