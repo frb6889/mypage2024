@@ -79,8 +79,8 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center" style={{ marginLeft: '16%' }}>
-            <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
+          <section className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl flex-col justify-between items-center">
+            <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
@@ -114,8 +114,8 @@ export default function Home() {
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./inhunt1.png" alt="" />
               </div>
               <div class="p-8">
-                <a href="#" class="block mt-1 text-lg leading-tight text-2xl font-bold text-black">InHunt</a>
-                <InProgressComponent />
+                <a class="block mt-1 leading-tight text-2xl font-bold text-black">InHunt</a>
+                <DoneComponent />
                 <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
                 </p>
                 <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#中文
