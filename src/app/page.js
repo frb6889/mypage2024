@@ -79,7 +79,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="py-24 px-10 flex flex-col item-center text-left gap-3">
+          <section className="flex justify-between items-center">
             <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '60px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
