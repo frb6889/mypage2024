@@ -80,7 +80,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="max-w-md mx-auto flex-col justify-between items-center">
+          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center">
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
                   <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
@@ -119,9 +119,9 @@ export default function Home() {
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-2xl font-bold text-black">InHunt</a>
                 <DoneComponent />
-                <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
+                <p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
                 </p>
-                <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#中文
+                <p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>#中文
                 </p>
                 <p class="mt-2 text-slate-500 text-primary">
                   InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
@@ -150,15 +150,13 @@ export default function Home() {
           </div>
 
           {/* self introduction */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+          <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
               <img className="h-48 w-full object-cover md:h-full md:w-48" src="./me1.png" alt="my photo" />
               </div>
               <div class="p-8">
-                
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
-
                 <p class="mt-2 text-slate-500 text-2x1 text-muted-foreground">
                   Since I am a non-binary, you can also call me Eran.
                   <br />
@@ -171,7 +169,6 @@ export default function Home() {
                   <br />
                   Oolong tea and Earl Grey are my go-to favorites.
                 </p>
-
               </div>
             </div>
           </div>
