@@ -50,10 +50,10 @@ export default function Home() {
     <main className="w-160 md:w-320 lg:w-480 py-2">
       {!showReview ? (
         <div className="mainpage">
-          <header className="flex flex-col justify-between items-center"
+          <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              width: '80%', margin: 0, padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
+              width: '80%', margin: '10%', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <div className="flex items-center">
