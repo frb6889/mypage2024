@@ -79,7 +79,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center" style={{marginLeft:'16%'}}>
+          <section className="flex-col justify-between items-center sm:w-80 md:w-600 lg:w-900" style={{marginLeft:'16%'}}>
             <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
