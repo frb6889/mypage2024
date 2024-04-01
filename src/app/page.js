@@ -15,6 +15,11 @@ import InProgressComponent from "@/components/inprogress"
 import DoneComponent from "@/components/done"
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
+/* 
+git add .
+git commit -m "r4"
+git push origin main
+ */
 
 
 
@@ -80,7 +85,7 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <section className="px-14 gap-8 flex-col items-center py-10">
+          <section className="flex justify-between items-center">
             <div className="Container">
               <AspectRatioDemo />
             </div>
