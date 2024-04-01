@@ -70,7 +70,48 @@ export function FileMind() {
         <main className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
 
             {/* page */}
-            <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
+            <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <div class="p-8">
+              <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
+                <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
+                    Filemind</h1>
+                <div>
+                    <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>Working Process</CardTitle>
+                                <CardDescription>Started In November 2023
+                                    <br />Lasted for 10 Months</CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>Our Team</CardTitle>
+                                <CardDescription>5 Developers
+                                    <br />1 Mentor
+                                    <br />1 Designer(me)</CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>My Role As Design Lead</CardTitle>
+                                <CardDescription>
+                                    User Research And Interviews
+                                    <br />Reviewed Relevant Papers
+                                    <br />Low/high-fidelity Prototypes
+                                    <br />Frontend Development
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                    </div>
+                </div>
+                </section>
+              </div>
+            </div>
+          </div>
+            {/* <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
                 <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
                     Filemind</h1>
                 <div>
@@ -108,7 +149,7 @@ export function FileMind() {
 
 
 
-            </section>
+            </section> */}
             <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
             <Image src="./filemind_design.png" alt="filemind-design" width={1500} />
 
