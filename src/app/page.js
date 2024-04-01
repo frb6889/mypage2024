@@ -73,7 +73,6 @@ export default function Home() {
 
               <Button variant="outline" onClick={() => window.open(resumePdfUrl, '_blank')}>Resume</Button>
               {/*  <Button>About</Button> */}
-
               <button onClick={toLinkedIn} className="flex items-center gap-2">
                 <FaLinkedin size={20} />
               </button>
@@ -81,7 +80,7 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center md:flex">
+          <section className="flex-col justify-between items-center">
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
                   <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
