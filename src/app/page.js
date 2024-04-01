@@ -85,7 +85,7 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
@@ -108,7 +108,26 @@ export default function Home() {
           
 
           {/* inhunt */}
-          
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <div className="md:shrink-0">
+                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
+              </div>
+              <div class="p-8">
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black">InHunt</a>
+                <InProgressComponent />
+                <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
+                </p>
+                <p className="text-muted-foreground mt-2 text-slate-500" style={{ marginTop: '7px' }}>#中文
+                </p>
+                <p class="mt-2 text-slate-500">
+                InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
+                </p>
+                <Button style={{ marginTop: '20px' }} onClick={() => handleClick('InHunt')}>Click to see more</Button>
+              </div>
+            </div>
+          </div>
+
           {/* <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className=" w-30">
