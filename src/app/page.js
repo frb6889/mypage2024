@@ -71,7 +71,7 @@ export default function Home() {
 
             <div className="flex gap-8">
 
-              <Button onClick={() => window.open(resumePdfUrl, '_blank')}>Resume</Button>
+              <Button variant="outline" onClick={() => window.open(resumePdfUrl, '_blank')}>Resume</Button>
               {/*  <Button>About</Button> */}
 
               <button onClick={toLinkedIn} className="flex items-center gap-2">
@@ -81,10 +81,17 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center">
-            <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
-            <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
-          </section>
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <div class="p-8">
+                <section className="flex-col justify-between items-center">
+                  <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
+                  <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
 
           {/* filemind */}
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
@@ -130,30 +137,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <section className="px-14 gap-8 flex-col items-center py-10">
-            <div className="Container">
-              <AspectRatio ratio={4 / 3} className=" w-30">
-                <Image
-                  //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-                  src="./inhunt.png"
-                  alt="Photo by Drew Beamer"
-                  fill
-                  className="rounded-md object-contain"
-                />
-              </AspectRatio>
-            </div>
-            <div className="Container flex-col gap-10 items-left">
-
-              <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">Inhunt</h1>
-              <DoneComponent />
-              <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
-              </p>
-              <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-                InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
-              </h1>
-              <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
-            </div>
-          </section> */}
 
           {/* eno */}
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
@@ -180,57 +163,23 @@ export default function Home() {
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
-            
+
                 <p class="mt-2 text-slate-500 text-2x1 text-muted-foreground">
-                Since I am a non-binary, you can also call me Eran.
-                <br />
-                I am a student at Tsinghua University, studying Information Art and Design.
-                <br />
-                I got into design and coding because I wanted to create tools that actually make life easier.
-                Over time, this has also become a way for my self-expression.
-                <br />
-                Outside of design, I love drinking tea, camping, and writing.
-                <br />
-                Oolong tea and Earl Grey are my go-to favorites.
+                  Since I am a non-binary, you can also call me Eran.
+                  <br />
+                  I am a student at Tsinghua University, studying Information Art and Design.
+                  <br />
+                  I got into design and coding because I wanted to create tools that actually make life easier.
+                  Over time, this has also become a way for my self-expression.
+                  <br />
+                  Outside of design, I love drinking tea, camping, and writing.
+                  <br />
+                  Oolong tea and Earl Grey are my go-to favorites.
                 </p>
-                <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
+
               </div>
             </div>
           </div>
-{/* 
-          <section className="py-10 px-14 gap-2 flex items-center">
-            <div style={{ width: 200 + 'px', }}>
-              <AspectRatio ratio={4 / 3} className=" w-30" >
-                <Image
-                  //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-                  src="./head.png"
-                  alt="Photo by Drew Beamer"
-                  width={300}
-                  height={200}
-                  className="rounded-md object-contain"
-                />
-              </AspectRatio>
-            </div>
-
-
-
-            <div className="py-24 px-10 flex flex-col item-center text-left gap-3">
-              <h1 className="scroll-m-20 text-4xl font-extrabold  lg:text-2xl">Hi,I am Erana.</h1>
-              <p className="text-2x1 text-muted-foreground">
-                Since I am a non-binary, you can also call me Eran.
-                <br />
-                I am a student at Tsinghua University, studying Information Art and Design.
-                <br />
-                I got into design and coding because I wanted to create tools that actually make life easier.
-                Over time, this has also become a way for my self-expression.
-                <br />
-                Outside of design, I love drinking tea, camping, and writing.
-                <br />
-                Oolong tea and Earl Grey are my go-to favorites.
-              </p>
-            </div>
-
-          </section> */}
         </div>) : (
         <div style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
           {/* 返回键 */}
