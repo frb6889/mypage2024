@@ -50,7 +50,7 @@ export default function Home() {
     <main className="w-160 md:w-320 lg:w-480 py-2">
       {!showReview ? (
         <div className="mainpage">
-          <header className="flex justify-between items-center"
+          <header className="flex flex-col justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
               width: '80%', margin: 0, padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
@@ -80,12 +80,11 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <section className="px-14 gap-8 flex items-center py-10">
+          <section className="px-14 gap-8 flex-col items-center py-10">
             <div className="Container">
               <AspectRatioDemo />
             </div>
             <div className="Container flex-col gap-10 items-left">
-
               <h1 className="scroll-m-20 text-2xl font-bold  lg:text-3xl">FileMind</h1>
               <InProgressComponent />
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Landing Project
