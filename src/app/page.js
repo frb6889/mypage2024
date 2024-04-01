@@ -58,7 +58,7 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              width: '80%', marginLeft: '10%',marginRight: '10%', marginTop: '-40px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
+              width: '80%', marginLeft: '10%', marginRight: '10%', marginTop: '-100px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <div className="flex items-center">
@@ -69,7 +69,7 @@ export default function Home() {
 
             <div className="flex gap-8">
 
-             {/*  <Button>Resume</Button>
+              {/*  <Button>Resume</Button>
               <Button>About</Button> */}
 
               <button onClick={toLinkedIn} className="flex items-center gap-2">
@@ -79,13 +79,31 @@ export default function Home() {
           </header>
 
           {/* my info */}
-          <section className="flex-col justify-between items-center sm:w-80 md:w-600 lg:w-900" style={{marginLeft:'16%'}}>
+          <section className="flex-col justify-between items-center sm:w-80 md:w-600 lg:w-900" style={{ marginLeft: '16%' }}>
             <h1 className="scroll-m-20 text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
           {/* filemind */}
-          <section className="flex-col justify-between items-center lg:px-20 md:px-14 sm:px-8 py-10">
+          <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <div className="md:shrink-0">
+                <Image
+                  //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+                  src="./filemind.png"
+                  alt="Photo by Drew Beamer"
+                  fill
+                  className="h-48 w-full object-cover md:h-full md:w-48"
+                />
+              </div>
+              <div className="p-8">
+                <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+                <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
+                <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+              </div>
+            </div>
+          </div>
+          {/* <section className="flex-col justify-between items-center lg:px-20 md:px-14 sm:px-8 py-10">
             <div className="Container">
               <AspectRatio ratio={4 / 3} className="w-30">
                 <Image
@@ -109,7 +127,7 @@ export default function Home() {
               </h1>
               <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
             </div>
-          </section>
+          </section> */}
 
           {/* inhunt */}
           <section className="px-14 gap-8 flex-col items-center py-10">
@@ -131,7 +149,7 @@ export default function Home() {
               <p className="text-muted-foreground lg:text-2l" style={{ marginTop: '7px' }}>#Collaboration With Alibaba
               </p>
               <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
-              InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
+                InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.
               </h1>
               <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
             </div>
