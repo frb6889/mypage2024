@@ -87,13 +87,13 @@ export default function Home() {
           </section>
 
           {/* filemind */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl" style={{margin:'6%'}}>
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
               </div>
               <div class="p-8">
-                <a href="#" class="block mt-1 text-lg leading-tight text-2xl font-bold text-black">FileMind</a>
+                <a href="#" class="block mt-1 leading-tight text-2xl font-bold text-black">FileMind</a>
                 <InProgressComponent />
                 <p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>#Landing Project
                 </p>
