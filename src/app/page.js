@@ -164,7 +164,7 @@ export default function Home() {
             </div>
           </div> */}
           <SingleProject 
-          ClickDir = {'Eno'}
+          Dir = {'Eno'}
           discription = {'An app for gen-z mental problems.'}
           tag1 = {'中文'} />
 

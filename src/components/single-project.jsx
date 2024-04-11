@@ -2,14 +2,14 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import DoneComponent from "@/components/done"
 
-const SingleProject = ({ ClickDir, tag1, tag2, description }) => (
+const SingleProject = ({ Dir, tag1, tag2, description }) => (
   <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
     <div className="md:flex">
       <div className="md:shrink-0">
         <img className="h-48 w-full object-cover md:h-full md:w-48" src="./inhunt1.png" alt="" />
       </div>
       <div className="p-8">
-        <a href="#" className="block mt-1 leading-tight text-2xl font-bold text-black">InHunt</a>
+        <a href="#" className="block mt-1 leading-tight text-2xl font-bold text-black">{Dir}</a>
         {/* Again, assuming DoneComponent is something you've got handled */}
         <DoneComponent />
         {/* Now these bastards are dynamic */}
@@ -28,7 +28,7 @@ const SingleProject = ({ ClickDir, tag1, tag2, description }) => (
             #{tag2}
           </p>
         )}
-        <Button style={{ marginTop: '20px' }} onClick={() => onInHuntClick({ClickDir})}>
+        <Button style={{ marginTop: '20px' }} onClick={() => onInHuntClick({Dir})}>
           Click to see more
         </Button>
       </div>
