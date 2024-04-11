@@ -88,7 +88,8 @@ export default function Home() {
 
             <div className="h-300"></div>
           {/* my info */}
-          <div style={{height:'40%' , backgroundColor:'red'}}>
+          <div style={{height:'200px' , backgroundColor:'green'}}></div>
+          <div style={{height:'40%' , backgroundColor:'red',margin:'30px'}}>
           <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{marginTop:'50px',marginBottom:'50px'}}>
                   <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
                   <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
