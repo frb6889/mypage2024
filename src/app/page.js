@@ -13,8 +13,11 @@ import './style.css';
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
 import DoneComponent from "@/components/done"
+
+//单独页面
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
+import Eno from "@/components/eno"
 /* 
 git add .
 git commit -m "r4"
