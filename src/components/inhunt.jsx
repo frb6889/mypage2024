@@ -100,7 +100,6 @@ export function FileMind() {
                                 </CardDescription>
                             </CardHeader>
                         </Card>
-
                     </div>
                 </div>
                 <Image src="./inhunt-full.png" alt="inhunt-full" width={1200} />

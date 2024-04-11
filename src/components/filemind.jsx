@@ -77,7 +77,7 @@ export function FileMind() {
                 <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
                     Filemind</h1>
                 <div>
-                    <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
+                    {/* <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
                         <Card className="w-[450px]">
                             <CardHeader>
                                 <CardTitle>Working Process</CardTitle>
@@ -105,6 +105,33 @@ export function FileMind() {
                             </CardHeader>
                         </Card>
 
+                    </div> */}
+                    <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>Working Process</CardTitle>
+                                <CardDescription>Started In December 2023
+                                    <br />Lasted for 1.2 Months</CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>Our Team</CardTitle>
+                                <CardDescription>3 Designers</CardDescription>
+                            </CardHeader>
+                        </Card>
+                        <Card className="w-[450px]">
+                            <CardHeader>
+                                <CardTitle>My Role As Design Lead</CardTitle>
+                                <CardDescription>
+                                    设计方案提出
+                                    <br />用户需求调研和采访，使用场景刻画
+                                    <br />总体架构设计
+                                    <br />灵感库管理部分界面设计
+                            
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
                     </div>
                 </div>
                 </section>
