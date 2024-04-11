@@ -179,12 +179,13 @@ export default function Home() {
               <h1 className="scroll-m-20 text-2l text-primary" style={{ marginTop: '2px' }}>
                 An app for gen-z mental problems.
               </h1>
+              <Button sclassName="inhuntButton" onClick={() => handleClick(InHunt)} style={{ marginTop: '20px' }}>Click to see more</Button>
               <Button variant="secondary" style={{ marginTop: '20px' }}>still working...</Button>
             </div>
           </section>
 
           <section className="py-10 px-14 gap-2 flex items-center">
-            <div style={{ width: 200 + 'px', }}>
+            {/* <div style={{ width: 200 + 'px', }}>
               <AspectRatio ratio={4 / 3} className=" w-30" >
                 <Image
                   //src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
@@ -195,7 +196,7 @@ export default function Home() {
                   className="rounded-md object-contain"
                 />
               </AspectRatio>
-            </div>
+            </div> */}
             <div className="py-24 px-10 flex flex-col item-center text-left gap-3">
               <h1 className="scroll-m-20 text-4xl font-extrabold  lg:text-2xl">Hi,I am Erana.</h1>
               <p className="text-2x1 text-muted-foreground">

@@ -151,7 +151,7 @@ export default function Home() {
                 <p class="mt-2 text-slate-500 text-primary">
                   An app for gen-z mental problems.
                 </p>
-                <Button variant="secondary" style={{ marginTop: '20px' }} onClick={() => handleClick('Eno')}>still working...</Button>
+              <Button sclassName="inhuntButton" onClick={() => handleClick('Eno')} style={{ marginTop: '20px' }}>Click to see more</Button>
               </div>
             </div>
           </div>
