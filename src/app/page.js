@@ -139,7 +139,7 @@ export default function Home() {
             </div>
           </div> */}
           <SingleProject 
-          onInHuntClick = {handleClick}
+          onInHuntClick = {'InHunt'}
           discription = {'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
           tag1 = {'Collaboration With Alibaba'}
           tag2 = {'中文'} />
@@ -148,7 +148,7 @@ export default function Home() {
 
 
           {/* eno */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+          {/* <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./eno1.png" alt="" />
@@ -162,7 +162,11 @@ export default function Home() {
               <Button sclassName="inhuntButton" onClick={() => handleClick('Eno')} style={{ marginTop: '20px' }}>Click to see more</Button>
               </div>
             </div>
-          </div>
+          </div> */}
+          <SingleProject 
+          ClickDir = {'Eno'}
+          discription = {'An app for gen-z mental problems.'}
+          tag1 = {'中文'} />
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
