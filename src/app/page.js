@@ -148,7 +148,7 @@ export default function Home() {
                 <p class="mt-2 text-slate-500 text-primary">
                   An app for gen-z mental problems.
                 </p>
-                <Button variant="secondary" style={{ marginTop: '20px' }}>still working...</Button>
+                <Button variant="secondary" style={{ marginTop: '20px' }} onClick={() => handleClick('Eno')}>still working...</Button>
               </div>
             </div>
           </div>
@@ -161,9 +161,9 @@ export default function Home() {
               </div>
               <div class="p-8">
                 <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">Hi,I am Erana.</a>
-                <p class="mt-2 text-slate-500 text-2x1 text-muted-foreground">
+                <p class="mt-2 text-slate-500 text-2x1 text-muted-foreground">{/* 
                   Since I am a non-binary, you can also call me Eran.
-                  <br />
+                  <br /> */}
                   I am a student at Tsinghua University, studying Information Art and Design.
                   <br />
                   I got into design and coding because I wanted to create tools that actually make life easier.
@@ -178,17 +178,22 @@ export default function Home() {
           </div>
         </div>) : (
         <div style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
-          {/* 返回键 */}
-          <header className="flex justify-between items-center"
-            style={{
-              position: 'fixed', border: '0.4px solid #dddddd',
-              margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
-            }}>
-            <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
-          </header>
-          {selectedComponent === 'FileMind' ? <FileMind /> : <InHunt />}
-        </div>
+        {/* 返回键 */}
+        <header className="flex justify-between items-center"
+          style={{
+            position: 'fixed', border: '0.4px solid #dddddd',
+            margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
+            backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
+          }}>
+          <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
+        </header>
+        {/* 条件渲染selectedComponent对应的组件 */}
+        {
+          selectedComponent === 'FileMind' ? <FileMind /> :
+          selectedComponent === 'InHunt' ? <InHunt /> :
+          selectedComponent === 'Eno' ? <Eno /> : null
+        }
+      </div>
       )}
     </main>
   );
