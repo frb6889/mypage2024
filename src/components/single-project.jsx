@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import DoneComponent from "@/components/done"
 
-const InHunt = ({ onInHuntClick, tag1, tag2, description }) => (
+const SingleProject = ({ onInHuntClick, tag1, tag2, description }) => (
   <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
     <div className="md:flex">
       <div className="md:shrink-0">
@@ -36,4 +36,4 @@ const InHunt = ({ onInHuntClick, tag1, tag2, description }) => (
   </div>
 );
 
-export default InHunt;
+export default SingleProject;
