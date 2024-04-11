@@ -18,6 +18,7 @@ import DoneComponent from "@/components/done"
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
+import SingleProject from "@/components/single-project"
 /* 
 git add .
 git commit -m "r4"
@@ -118,7 +119,7 @@ export default function Home() {
 
 
           {/* inhunt */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+          {/* <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./inhunt1.png" alt="" />
@@ -136,7 +137,14 @@ export default function Home() {
                 <Button style={{ marginTop: '20px' }} onClick={() => handleClick('InHunt')}>Click to see more</Button>
               </div>
             </div>
-          </div>
+          </div> */}
+          <SingleProject 
+          onInHuntClick = {handleClick}
+          discription = {'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
+          tag1 = {'Collaboration With Alibaba'}
+          tag2 = {'中文'} />
+
+          
 
 
           {/* eno */}
