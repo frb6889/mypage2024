@@ -46,7 +46,7 @@ const MoreProject = ({dir1,dir2,dir3}) => {
               </div>
               <figcaption className="pt-2 text-xs text-muted-foreground gap-3">
                 {/* Photo by{" "} */}
-                <Button variant="outline" style={{ height:"30px" }} onClick={artwork.onClickDir}>
+                <Button variant="ghost" style={{ height:"30px" }} onClick={artwork.onClickDir}>
                 {artwork.name}
                 </Button>
               </figcaption>
