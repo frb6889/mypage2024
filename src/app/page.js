@@ -141,7 +141,12 @@ export default function Home() {
           {/*  */}
           <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
-              <MoreProject />
+            <div class="p-8">
+                <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">More project</a>
+              <MoreProject
+              onClickDir={() => handleClick('Eno')} 
+              />
+              </div>
             </div>
           </div>
 

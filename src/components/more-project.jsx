@@ -2,10 +2,11 @@ import * as React from "react"
 import Image from "next/image"
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { Button } from "@/components/ui/button";
 
 
 
-const MoreProject = () => {
+const MoreProject = ({ onClickDir }) => {
   const works = [
     {
       artist: "Ornella Binni",
@@ -20,7 +21,7 @@ const MoreProject = () => {
       art: "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
     },
   ]
-  
+
   return (
     <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-4">
@@ -40,6 +41,9 @@ const MoreProject = () => {
               <span className="font-semibold text-foreground">
                 {artwork.artist}
               </span>
+              <Button style={{ marginTop: '20px' }} onClick={onClickDir}>
+                Click to see more
+              </Button>
             </figcaption>
           </figure>
         ))}
