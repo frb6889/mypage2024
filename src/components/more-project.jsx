@@ -31,7 +31,7 @@ const MoreProject = ({dir1,dir2,dir3}) => {
     <div className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap">
       <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl"
       style={{margin:'20px'}}>More project</a>
-      <ScrollArea className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap rounded-md border">
+      <ScrollArea className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap rounded-md" style={{border:'0px'}}>
 
         <div className="flex w-max space-x-4 p-4">
           {works.map((artwork) => (
