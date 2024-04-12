@@ -1,4 +1,5 @@
 //https://youtu.be/dgUgggu8VEc
+//slow_homecoming_full.png
 import * as React from "react"
 import '../app/style.css';
 import 'tailwindcss/tailwind.css';
@@ -33,35 +34,50 @@ import { AspectRatio } from "../components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
 
 
-export function Slhkm() {
+export function FileMind() {
     const router = useRouter();
 
     const toHome = () => {
         router.push('/');
     }
 
+    const CircularCard = ({ children }) => (
+        <div className="circular-card" style={{ width: '230px', height: '230px', backgroundColor: 'rgba(47, 114, 241, .1)', borderRadius: '50%', margin: '-10px' }}>
+            <CardHeader>
+                <CardDescription style={{ marginTop: '28%', fontSize: '20px', marginLeft: '20px' }}>
+                    {children}
+                </CardDescription>
+            </CardHeader>
+        </div>
+    );
 
+    const PointCard = ({ children }) => (
+        <Card style={{ width: '180px', marginBottom: '20px' }}>
+            <CardHeader>
+                <CardTitle className="flex justify-center">
+                    {children}
+                </CardTitle>
+            </CardHeader>
+        </Card>
+    )
 
-    const toSHVideo = () => {
-        const url = "https://youtu.be/dgUgggu8VEc";
-        window.open(url, '_blank');
-      }
+    const PainpointCard = ({ children }) => (
+        <div className="painpoint-card">
+            {children}
+        </div>
+    );
+
 
     return (
-        <main className="px-24 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
+        <main className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
 
             {/* page */}
-            <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
-                <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
-                    Slow Homecoming</h1>
-                <Button onClick={toSHVideo} variant="secondary">click to see the video</Button>
-                <Image src="./lume-full.png" alt="lume-full" width={1200} />
-
-            </section>
+            
+            <Image src="./slow_homecoming_full.png" alt="filemind-research" width={1200} />
 
 
         </main>
     );
 };
 
-export default Slhkm;
+export default FileMind;
