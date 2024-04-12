@@ -75,7 +75,7 @@ export function Lume() {
                 <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
                     Lume</h1>
                     <Button variant="secondary">click to see the video</Button>
-                <Image src="./Lume-full.png" alt="inhunt-full" width={1200} />
+                <Image src="./lume-full.png" alt="lume-full" width={1200} />
 
 
             </section>
