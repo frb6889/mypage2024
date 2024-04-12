@@ -33,7 +33,7 @@ import { AspectRatio } from "../components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
 
 
-export function SlowHomecoming() {
+export function Slhkm() {
     const router = useRouter();
 
     const toHome = () => {
@@ -87,4 +87,4 @@ export function SlowHomecoming() {
     );
 };
 
-export default FileMind;
+export default Slhkm;

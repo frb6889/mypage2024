@@ -24,6 +24,7 @@ import DoneComponent from "@/components/done"
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
+import Slhkm from "@/components/slow-homecoming"
 
 import SingleProject from "@/components/single-project"
 import MoreProject from "@/components/more-project"
@@ -141,7 +142,7 @@ export default function Home() {
           {/*  */}
             <div class="p-8">
                 <MoreProject 
-                dir1 = {() => handleClick('FileMind')}
+                dir1 = {() => handleClick('Slhkm')}
                 dir2 = {() => handleClick('InHunt')}
                 dir3 = {() => handleClick('Eno')}/>
               </div>
@@ -184,7 +185,10 @@ export default function Home() {
           {
             selectedComponent === 'FileMind' ? <FileMind /> :
               selectedComponent === 'InHunt' ? <InHunt /> :
-                selectedComponent === 'Eno' ? <Eno /> : null
+              selectedComponent === 'Slhkm' ? <Slhkm /> : 
+              selectedComponent === 'Eno' ? <Eno /> : 
+
+                null
           }
         </div>
       )}
