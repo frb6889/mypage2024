@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation"
 
 
 
-export function FileMind() {
+export function Fragmentation() {
     const router = useRouter();
 
     const toHome = () => {
@@ -43,4 +43,4 @@ export function FileMind() {
     );
 };
 
-export default FileMind;
+export default Fragmentation;

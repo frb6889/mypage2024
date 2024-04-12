@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation"
 
 
 
-export function FileMind() {
+export function Huuu() {
     const router = useRouter();
 
     const toHome = () => {
@@ -39,4 +39,4 @@ export function FileMind() {
     );
 };
 
-export default FileMind;
+export default Huuu;

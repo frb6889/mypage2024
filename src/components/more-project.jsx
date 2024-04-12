@@ -25,7 +25,7 @@ const MoreProject = ({dir1,dir2,dir3,dir4}) => {
     },
     {
       name: "Huuu",
-      urll: "./huuu/20.png",
+      urll: "./huuu.png",
       onClickDir : dir4,
     },
   ]

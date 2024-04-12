@@ -29,6 +29,8 @@ import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
 import Slhkm from "@/components/slow-homecoming"
 import Lume from "@/components/lume"
+import Fragmentation from "@/components/fragmentation"
+import Huuu from "@/components/huuu"
 
 
 /* 
@@ -147,7 +149,8 @@ export default function Home() {
                 <MoreProject 
                 dir1 = {() => handleClick('Slhkm')}
                 dir2 = {() => handleClick('Lume')}
-                dir3 = {() => handleClick('Eno')}/>
+                dir3 = {() => handleClick('Fragmentation')}
+                dir4 = {() => handleClick('Huuu')}/>
               </div>
 
           {/* self introduction */}
