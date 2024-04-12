@@ -102,7 +102,7 @@ export default function Home() {
 
 
           {/* filemind */}
-          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+          {/* <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:shrink-0">
                 <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
@@ -121,14 +121,23 @@ export default function Home() {
                 <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
               </div>
             </div>
-          </div>
+          </div> */}
+          <SingleProject 
+          Dir = {'FileMind'}
+          pos = {<InProgressComponent />}
+          picDir = {"./filemind.png"}
+          description = {'thors, serving as an inspiration capturing and organizing assistant.'}
+          tag1 = {'Landing Project'}
+          tag2 = {'Tsinghua University Pervasive HCI Group'} 
+          onClickDir={() => handleClick('FileMind')}/> 
 
 
           {/* inhunt */}
           <SingleProject 
           Dir = {'InHunt'}
+          pos = {<DoneComponent />}
           picDir = {"./inhunt1.png"}
-          discription = {'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
+          description = {'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
           tag1 = {'Collaboration With Alibaba'}
           tag2 = {'中文'} 
           onClickDir={() => handleClick('InHunt')}/> 
@@ -140,7 +149,7 @@ export default function Home() {
           <SingleProject 
           Dir = {'Eno'}
           picDir = {"./eno1.png"}
-          discription = {'An app for gen-z mental problems.'}
+          description = {'An app for gen-z mental problems.'}
           tag1 = {'中文'} 
           onClickDir={() => handleClick('Eno')}/> 
 
