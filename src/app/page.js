@@ -190,10 +190,14 @@ export default function Home() {
           {/* 条件渲染selectedComponent对应的组件 */}
           {
             selectedComponent === 'FileMind' ? <FileMind /> :
-              selectedComponent === 'InHunt' ? <InHunt /> :
-              selectedComponent === 'Slhkm' ? <Slhkm /> : 
-              selectedComponent === 'Eno' ? <Eno /> : 
-              selectedComponent === 'Lume' ? <Lume /> : 
+            selectedComponent === 'InHunt' ? <InHunt /> :
+            selectedComponent === 'Slhkm' ? <Slhkm /> : 
+            selectedComponent === 'Eno' ? <Eno /> : 
+            selectedComponent === 'Lume' ? <Lume /> : 
+            selectedComponent === 'Fragmentation' ? <Fragmentation /> : 
+            selectedComponent === 'Huuu' ? <Huuu /> : 
+
+
 
                 null
           }
