@@ -24,8 +24,8 @@ import DoneComponent from "@/components/done"
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
-import SingleProject from "@/components/single-project"
 
+import SingleProject from "@/components/single-project"
 import MoreProject from "@/components/more-project"
 /* 
 git add .
@@ -112,7 +112,7 @@ export default function Home() {
             picDir={"./filemind.png"}
             description={'A Data Management Assistant tailored for financial systems,streamlining the organization and control of data tables for enhanced efficiency.'}
             tag1={<p onClick={toPIgroupWebsite} className="text-muted-foreground text-slate-500 hover:underline" style={{ cursor: 'pointer' }}>
-            #Tsinghua University Pervasive HCI Group</p>}
+              #Tsinghua University Pervasive HCI Group</p>}
             tag2={'Landing Project'}
             onClickDir={() => handleClick('FileMind')} />
 
@@ -137,9 +137,13 @@ export default function Home() {
             description={'An app for gen-z mental problems.'}
             tag2={'中文'}
             onClickDir={() => handleClick('Eno')} />
-          
+
           {/*  */}
-          <MoreProject />
+          <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
+            <div className="md:flex">
+              <MoreProject />
+            </div>
+          </div>
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
