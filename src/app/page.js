@@ -3,22 +3,34 @@
 import * as React from "react"
 import { useState } from "react"
 
+
+import { FaLinkedin } from 'react-icons/fa';
+import './style.css';
+
+///next
 import Image from "next/image"
 //import { useNavigation } from "next/navigation"
 import { useRouter } from "next/navigation"
+
+///shadcn组件
 import { Button } from "@/components/ui/button"
-import { FaLinkedin } from 'react-icons/fa';
-import { AspectRatioDemo } from "@/components/apic"
-import './style.css';
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+
+///自定义组件
 import InProgressComponent from "@/components/inprogress"
 import DoneComponent from "@/components/done"
 
-//单独页面
+//自定义页面
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
 import SingleProject from "@/components/single-project"
+
+import MoreProject from "@/components/more-project"
 /* 
 git add .
 git commit -m "r4"
@@ -97,10 +109,6 @@ export default function Home() {
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
-
-
-
-
           {/* filemind */}
           <SingleProject
             Dir={'FileMind'}
@@ -125,9 +133,6 @@ export default function Home() {
             description={'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
             onClickDir={() => handleClick('InHunt')} />
 
-
-
-
           {/* eno */}
           <SingleProject
             Dir={'Eno'}
@@ -138,6 +143,7 @@ export default function Home() {
             onClickDir={() => handleClick('Eno')} />
           
           {/*  */}
+          <MoreProject />
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
