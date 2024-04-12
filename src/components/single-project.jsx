@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import DoneComponent from "@/components/done"
 
-const SingleProject = ({ Dir, tag1, tag2, description }) => (
+const SingleProject = ({ Dir, tag1, tag2, description , onClickDir}) => (
   <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
     <div className="md:flex">
       <div className="md:shrink-0">
@@ -28,7 +28,7 @@ const SingleProject = ({ Dir, tag1, tag2, description }) => (
             #{tag2}
           </p>
         )}
-        <Button style={{ marginTop: '20px' }} onClick={() => onInHuntClick({Dir})}>
+        <Button style={{ marginTop: '20px' }} onClick={onClickDir}>
           Click to see more
         </Button>
       </div>

@@ -173,7 +173,8 @@ export default function Home() {
           <SingleProject 
           Dir = {'Eno'}
           discription = {'An app for gen-z mental problems.'}
-          tag1 = {'中文'} /> 
+          tag1 = {'中文'} 
+          onClickDir={() => handleClick('Eno')}/> 
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
