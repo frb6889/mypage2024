@@ -36,7 +36,7 @@ const MoreProject = ({ onClickDir }) => {
                 <Image
                   src={artwork.art}
                   alt={`Photo by ${artwork.artist}`}
-                  className="aspect-[3/4] h-fit w-fit object-cover"
+                  className="aspect-[4/3] h-fit w-fit object-cover"
                   width={300}
                   height={400}
                 />
