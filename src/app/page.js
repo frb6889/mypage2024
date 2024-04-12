@@ -63,7 +63,7 @@ export default function Home() {
         <div className="mainpage">
 
           {/* header */}
-          
+
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
@@ -85,20 +85,20 @@ export default function Home() {
               </button>
             </div>
           </header>
-          
 
 
-            <div className="h-300"></div>
+
+          <div className="h-300"></div>
           {/* my info */}
-          
-          
-          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{marginTop:'50px',marginBottom:'50px'}}>
-                  <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
-                  <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
+
+
+          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px' }}>
+            <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
+            <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD</p>
           </section>
 
-          
-          
+
+
 
 
           {/* filemind */}
@@ -122,36 +122,39 @@ export default function Home() {
               </div>
             </div>
           </div> */}
-          <SingleProject 
-          Dir = {'FileMind'}
-          pos = {<InProgressComponent />}
-          picDir = {"./filemind.png"}
-          description = {'thors, serving as an inspiration capturing and organizing assistant.'}
-          tag1 = {'Landing Project'}
-          tag2 = {'Tsinghua University Pervasive HCI Group'} 
-          onClickDir={() => handleClick('FileMind')}/> 
+          <SingleProject
+            Dir={'FileMind'}
+            pos={<InProgressComponent />}
+            picDir={"./filemind.png"}
+            description={'thors, serving as an inspiration capturing and organizing assistant.'}
+            tag1={'Landing Project'}
+            tag2={'Tsinghua University Pervasive HCI Group'}
+            onClickDir={() => handleClick('FileMind')} />
 
 
           {/* inhunt */}
-          <SingleProject 
-          Dir = {'InHunt'}
-          pos = {<DoneComponent />}
-          picDir = {"./inhunt1.png"}
-          description = {'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
-          tag1 = {'Collaboration With Alibaba'}
-          tag2 = {'中文'} 
-          onClickDir={() => handleClick('InHunt')}/> 
+          <SingleProject
+            Dir={'InHunt'}
+            pos={<DoneComponent />}
+            picDir={"./inhunt1.png"}
+            tag1={<p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>
+              #Collaboration With Alibaba
+            </p>}
+            tag2={'中文'}
+            description={'InHunt is an app designed specifically for online novel authors, serving as an inspiration capturing and organizing assistant.'}
+            onClickDir={() => handleClick('InHunt')} />
 
-          
+
 
 
           {/* eno */}
-          <SingleProject 
-          Dir = {'Eno'}
-          picDir = {"./eno1.png"}
-          description = {'An app for gen-z mental problems.'}
-          tag1 = {'中文'} 
-          onClickDir={() => handleClick('Eno')}/> 
+          <SingleProject
+            Dir={'Eno'}
+            pos={<DoneComponent />}
+            picDir={"./eno1.png"}
+            description={'An app for gen-z mental problems.'}
+            tag1={'中文'}
+            onClickDir={() => handleClick('Eno')} />
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
@@ -178,22 +181,22 @@ export default function Home() {
           </div>
         </div>) : (
         <div style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
-        {/* 返回键 */}
-        <header className="flex justify-between items-center"
-          style={{
-            position: 'fixed', border: '0.4px solid #dddddd',
-            margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-            backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
-          }}>
-          <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
-        </header>
-        {/* 条件渲染selectedComponent对应的组件 */}
-        {
-          selectedComponent === 'FileMind' ? <FileMind /> :
-          selectedComponent === 'InHunt' ? <InHunt /> :
-          selectedComponent === 'Eno' ? <Eno /> : null
-        }
-      </div>
+          {/* 返回键 */}
+          <header className="flex justify-between items-center"
+            style={{
+              position: 'fixed', border: '0.4px solid #dddddd',
+              margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
+              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
+            }}>
+            <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
+          </header>
+          {/* 条件渲染selectedComponent对应的组件 */}
+          {
+            selectedComponent === 'FileMind' ? <FileMind /> :
+              selectedComponent === 'InHunt' ? <InHunt /> :
+                selectedComponent === 'Eno' ? <Eno /> : null
+          }
+        </div>
       )}
     </main>
   );
