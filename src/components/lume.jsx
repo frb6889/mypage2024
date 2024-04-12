@@ -33,7 +33,7 @@ import { AspectRatio } from "../components/ui/aspect-ratio"
 import InProgressComponent from "@/components/inprogress"
 
 
-export function Slhkm() {
+export function Lume() {
     const router = useRouter();
 
     const toHome = () => {
@@ -85,4 +85,4 @@ export function Slhkm() {
     );
 };
 
-export default Slhkm;
+export default Lume;

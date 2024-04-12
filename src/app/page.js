@@ -19,15 +19,18 @@ import { Button } from "@/components/ui/button"
 ///自定义组件
 import InProgressComponent from "@/components/inprogress"
 import DoneComponent from "@/components/done"
+import SingleProject from "@/components/single-project"
+import MoreProject from "@/components/more-project"
 
-//自定义页面
+///自定义页面
+///项目
 import FileMind from "@/components/filemind"
 import InHunt from "@/components/inhunt"
 import Eno from "@/components/eno"
 import Slhkm from "@/components/slow-homecoming"
+import Lume from "@/components/lume"
 
-import SingleProject from "@/components/single-project"
-import MoreProject from "@/components/more-project"
+
 /* 
 git add .
 git commit -m "r4"
@@ -143,7 +146,7 @@ export default function Home() {
             <div class="p-8">
                 <MoreProject 
                 dir1 = {() => handleClick('Slhkm')}
-                dir2 = {() => handleClick('InHunt')}
+                dir2 = {() => handleClick('Lume')}
                 dir3 = {() => handleClick('Eno')}/>
               </div>
 
@@ -187,6 +190,7 @@ export default function Home() {
               selectedComponent === 'InHunt' ? <InHunt /> :
               selectedComponent === 'Slhkm' ? <Slhkm /> : 
               selectedComponent === 'Eno' ? <Eno /> : 
+              selectedComponent === 'Lume' ? <Lume /> : 
 
                 null
           }
