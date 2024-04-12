@@ -126,9 +126,10 @@ export default function Home() {
             Dir={'FileMind'}
             pos={<InProgressComponent />}
             picDir={"./filemind.png"}
-            description={'thors, serving as an inspiration capturing and organizing assistant.'}
-            tag1={'Landing Project'}
-            tag2={'Tsinghua University Pervasive HCI Group'}
+            description={'A Data Management Assistant tailored for financial systems,streamlining the organization and control of data tables for enhanced efficiency.'}
+            tag1={<p onClick={toPIgroupWebsite} className="text-muted-foreground text-slate-500 hover:underline" style={{ cursor: 'pointer' }}>
+            #Tsinghua University Pervasive HCI Group</p>}
+            tag2={'Landing Project'}
             onClickDir={() => handleClick('FileMind')} />
 
 
