@@ -140,9 +140,7 @@ export default function Home() {
 
           {/*  */}
             <div class="p-8">
-                <MoreProject
-              onClickDir={() => handleClick('Eno')} 
-              />
+                <MoreProject />
               </div>
 
           {/* self introduction */}

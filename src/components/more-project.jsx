@@ -6,19 +6,22 @@ import { Button } from "@/components/ui/button";
 
 
 
-const MoreProject = ({ onClickDir }) => {
+const MoreProject = () => {
   const works = [
     {
       artist: "Slow Homecoming",
       art: "./slow_homecoming.png",
+      onClickDir : "onClickDir={() => handleClick('FileMind')",
     },
     {
       artist: "Lume",
       art: "./lume.png",
+      onClickDir : "onClickDir={() => handleClick('InHunt')",
     },
     {
       artist: "Fragmentation",
       art: "./Fragmentation.png",
+      onClickDir : "onClickDir={() => handleClick('Eno')",
     },
   ]
 
@@ -41,12 +44,12 @@ const MoreProject = ({ onClickDir }) => {
                   height={400}
                 />
               </div>
-              <figcaption className="pt-2 text-xs text-muted-foreground">
-                Photo by{" "}
+              <figcaption className="pt-2 text-xs text-muted-foreground gap-3">
+                {/* Photo by{" "} */}
                 <span className="font-semibold text-foreground">
                   {artwork.artist}
                 </span>
-                <Button style={{ marginTop: '20px' }} onClick={onClickDir}>
+                <Button variant="outline" style={{ height:"30px" }} onClick={artwork.onClickDir}>
                   Click to see more
                 </Button>
               </figcaption>
