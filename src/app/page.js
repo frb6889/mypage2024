@@ -172,6 +172,7 @@ export default function Home() {
 
           <SingleProject 
           Dir = {'Eno'}
+          picDir = {"./eno1.png"}
           discription = {'An app for gen-z mental problems.'}
           tag1 = {'中文'} 
           onClickDir={() => handleClick('Eno')}/> 

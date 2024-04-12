@@ -2,11 +2,11 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import DoneComponent from "@/components/done"
 
-const SingleProject = ({ Dir, tag1, tag2, description , onClickDir}) => (
+const SingleProject = ({ Dir, picDir,tag1, tag2, description , onClickDir}) => (
   <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
     <div className="md:flex">
       <div className="md:shrink-0">
-        <img className="h-48 w-full object-cover md:h-full md:w-48" src="./inhunt1.png" alt="" />
+        <img className="h-48 w-full object-cover md:h-full md:w-48" src={picDir} alt="" />
       </div>
       <div className="p-8">
         <a href="#" className="block mt-1 leading-tight text-2xl font-bold text-black">{Dir}</a>
