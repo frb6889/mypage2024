@@ -6,22 +6,22 @@ import { Button } from "@/components/ui/button";
 
 
 
-const MoreProject = () => {
+const MoreProject = ({dir1,dir2,dir3}) => {
   const works = [
     {
       name: "Slow Homecoming",
       urll: "./slow_homecoming.png",
-      onClickDir : "onClickDir={() => handleClick('FileMind')",
+      onClickDir : dir1,
     },
     {
       name: "Lume",
       urll: "./lume.png",
-      onClickDir : "onClickDir={() => handleClick('InHunt')",
+      onClickDir : dir2,
     },
     {
       name: "Fragmentation",
       urll: "./Fragmentation.png",
-      onClickDir : "onClickDir={() => handleClick('Eno')",
+      onClickDir : dir3,
     },
   ]
 

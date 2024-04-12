@@ -140,7 +140,10 @@ export default function Home() {
 
           {/*  */}
             <div class="p-8">
-                <MoreProject />
+                <MoreProject 
+                dir1 = {() => handleClick('FileMind')}
+                dir2 = {() => handleClick('InHunt')}
+                dir3 = {() => handleClick('Eno')}/>
               </div>
 
           {/* self introduction */}
