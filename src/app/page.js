@@ -143,7 +143,7 @@ export default function Home() {
             onClickDir={() => handleClick('Eno')} />
           
           {/*  */}
-          <MoreProject />
+          {/* <MoreProject /> */}
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
