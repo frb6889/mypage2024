@@ -140,8 +140,7 @@ export default function Home() {
 
           {/*  */}
             <div class="p-8">
-                <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">More project</a>
-              <MoreProject
+                <MoreProject
               onClickDir={() => handleClick('Eno')} 
               />
               </div>
