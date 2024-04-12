@@ -41,37 +41,16 @@ export function FileMind() {
         router.push('/');
     }
 
-    const CircularCard = ({ children }) => (
-        <div className="circular-card" style={{ width: '230px', height: '230px', backgroundColor: 'rgba(47, 114, 241, .1)', borderRadius: '50%', margin: '-10px' }}>
-            <CardHeader>
-                <CardDescription style={{ marginTop: '28%', fontSize: '20px', marginLeft: '20px' }}>
-                    {children}
-                </CardDescription>
-            </CardHeader>
-        </div>
-    );
-
-    const PointCard = ({ children }) => (
-        <Card style={{ width: '180px', marginBottom: '20px' }}>
-            <CardHeader>
-                <CardTitle className="flex justify-center">
-                    {children}
-                </CardTitle>
-            </CardHeader>
-        </Card>
-    )
-
-    const PainpointCard = ({ children }) => (
-        <div className="painpoint-card">
-            {children}
-        </div>
-    );
-
+    const toVideo = () => {
+        const url = "https://youtu.be/dgUgggu8VEc";
+        window.open(url, '_blank');
+      }
 
     return (
         <main className="px-10 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
 
             {/* page */}
+            <Button onClick={toVideo} variant="ghost">click to see the video</Button>
             
             <Image src="./slow_homecoming_full.png" alt="filemind-research" width={1200} />
 

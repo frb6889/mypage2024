@@ -50,12 +50,8 @@ export function Lume() {
         <main className="px-24 py-2" style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
 
             {/* page */}
-            <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
-                <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
-                    Lume</h1>
-                <Button onClick={toLumeVideo} variant="secondary">click to see the video</Button>
-
-            </section>
+                
+            <Button onClick={toLumeVideo} variant="ghost">click to see the video</Button>
             <Image src="./Lume_full.png" alt="lume-full" width={1200} />
 
 
