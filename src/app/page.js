@@ -102,26 +102,6 @@ export default function Home() {
 
 
           {/* filemind */}
-          {/* <div className="max-w-md mx-auto bg-white overflow-hidden md:max-w-2xl">
-            <div className="md:flex">
-              <div className="md:shrink-0">
-                <img className="h-48 w-full object-cover md:h-full md:w-48" src="./filemind.png" alt="" />
-              </div>
-              <div class="p-8">
-                <a href="#" class="block mt-1 leading-tight text-2xl font-bold text-black">FileMind</a>
-                <InProgressComponent />
-                <p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>#Landing Project
-                </p>
-                <p onClick={toPIgroupWebsite} className="text-muted-foreground text-slate-500 hover:underline" style={{ cursor: 'pointer' }}>
-                  #Tsinghua University Pervasive HCI Group</p>
-                <p class="mt-2 text-slate-500 text-primary">
-                  A Data Management Assistant tailored for financial systems,
-                  streamlining the organization and control of data tables for enhanced efficiency.
-                </p>
-                <Button style={{ marginTop: '20px' }} onClick={() => handleClick('FileMind')}>Click to see more</Button>
-              </div>
-            </div>
-          </div> */}
           <SingleProject
             Dir={'FileMind'}
             pos={<InProgressComponent />}
@@ -154,8 +134,10 @@ export default function Home() {
             pos={<DoneComponent />}
             picDir={"./eno1.png"}
             description={'An app for gen-z mental problems.'}
-            tag1={'中文'}
+            tag2={'中文'}
             onClickDir={() => handleClick('Eno')} />
+          
+          {/*  */}
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">

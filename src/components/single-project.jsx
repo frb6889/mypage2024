@@ -13,7 +13,7 @@ const SingleProject = ({ Dir, picDir,tag1, tag2, pos, description , onClickDir})
         {pos}
         {tag1}
         {tag2 && (
-          <p className="text-muted-foreground text-slate-500" style={{ marginTop: '7px' }}>
+          <p className="text-muted-foreground text-slate-500">
             #{tag2}
           </p>
         )}
