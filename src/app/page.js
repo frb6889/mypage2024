@@ -14,11 +14,7 @@ import { useRouter } from "next/navigation"
 
 ///shadcn组件
 import { Button } from "@/components/ui/button"
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "@/components/ui/resizable"
+
 
 ///自定义组件
 import InProgressComponent from "@/components/inprogress"
@@ -143,7 +139,7 @@ export default function Home() {
             onClickDir={() => handleClick('Eno')} />
           
           {/*  */}
-          {/* <MoreProject /> */}
+          <MoreProject />
 
           {/* self introduction */}
           <div className="max-w-lg mx-auto bg-white overflow-hidden md:max-w-2xl">
