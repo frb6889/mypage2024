@@ -24,11 +24,11 @@ const MoreProject = ({ onClickDir }) => {
 
   return (
     
-    <div>
-    <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">More project</a>
+    
+    
     <ScrollArea className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-4">
-        
+      <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">More project</a>
         {works.map((artwork) => (
           <figure key={artwork.artist} className="shrink-0">
             <div className="overflow-hidden rounded-md">
@@ -54,7 +54,6 @@ const MoreProject = ({ onClickDir }) => {
       </div>
       <ScrollBar orientation="horizontal" />
     </ScrollArea>
-    </div>
   )
 }
 
