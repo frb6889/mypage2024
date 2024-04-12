@@ -9,18 +9,18 @@ import { Button } from "@/components/ui/button";
 const MoreProject = () => {
   const works = [
     {
-      artist: "Slow Homecoming",
-      art: "./slow_homecoming.png",
+      name: "Slow Homecoming",
+      urll: "./slow_homecoming.png",
       onClickDir : "onClickDir={() => handleClick('FileMind')",
     },
     {
-      artist: "Lume",
-      art: "./lume.png",
+      name: "Lume",
+      urll: "./lume.png",
       onClickDir : "onClickDir={() => handleClick('InHunt')",
     },
     {
-      artist: "Fragmentation",
-      art: "./Fragmentation.png",
+      name: "Fragmentation",
+      urll: "./Fragmentation.png",
       onClickDir : "onClickDir={() => handleClick('Eno')",
     },
   ]
@@ -29,16 +29,16 @@ const MoreProject = () => {
 
 
     <div className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap">
-      <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl">More project</a>
+      <a class="block mt-1 leading-tight text-black scroll-m-20 font-extrabold text-2xl"
+      style={{margin:'20px'}}>More project</a>
       <ScrollArea className="max-w-md mx-auto bg-white md:max-w-2xl whitespace-nowrap rounded-md border">
 
         <div className="flex w-max space-x-4 p-4">
           {works.map((artwork) => (
-            <figure key={artwork.artist} className="shrink-0">
+            <figure key={artwork.name} className="shrink-0">
               <div className="overflow-hidden rounded-md">
                 <Image
-                  src={artwork.art}
-                  alt={`Photo by ${artwork.artist}`}
+                  src={artwork.urll}
                   className="aspect-[4/3] h-fit w-fit object-cover"
                   width={300}
                   height={400}
@@ -46,11 +46,8 @@ const MoreProject = () => {
               </div>
               <figcaption className="pt-2 text-xs text-muted-foreground gap-3">
                 {/* Photo by{" "} */}
-                <span className="font-semibold text-foreground">
-                  {artwork.artist}
-                </span>
                 <Button variant="outline" style={{ height:"30px" }} onClick={artwork.onClickDir}>
-                  Click to see more
+                {artwork.name}
                 </Button>
               </figcaption>
             </figure>
