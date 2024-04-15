@@ -182,7 +182,7 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
+              marginLeft: '20px', padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
@@ -191,8 +191,9 @@ export default function Home() {
           {
             selectedComponent === 'FileMind' ? <FileMind /> :
             selectedComponent === 'InHunt' ? <InHunt /> :
-            selectedComponent === 'Slhkm' ? <Slhkm /> : 
             selectedComponent === 'Eno' ? <Eno /> : 
+            
+            selectedComponent === 'Slhkm' ? <Slhkm /> : 
             selectedComponent === 'Lume' ? <Lume /> : 
             selectedComponent === 'Fragmentation' ? <Fragmentation /> : 
             selectedComponent === 'Huuu' ? <Huuu /> : 
