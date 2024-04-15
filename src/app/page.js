@@ -182,8 +182,8 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              marginLeft: '20px', padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
+              marginLeft: '40px',marginTop: '40px', padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
+              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)',cursor:'pointer'
             }}>
             <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
           </header>
