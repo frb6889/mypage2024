@@ -160,7 +160,7 @@ export default function Home() {
           </div>
 
           {/* Experiments */}
-          <div className="flex items-center justify-center mb-0 mt-10 text-base text-slate-900 font-semibold">
+          <div className="flex items-center justify-center mb-4 mt-10 text-base text-slate-900 font-semibold">
             Experiments
           </div>
           <div className="flex items-center justify-center min-h-screen ">
