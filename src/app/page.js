@@ -3,6 +3,7 @@
 import * as React from "react"
 import { useState } from "react"
 
+
 //framer motion
 import { motion } from "framer-motion"
 
@@ -60,13 +61,13 @@ export default function Home() {
   const resumePdfUrl = "./resume_CN.pdf";
 
 
-  const cards = [
-    { title: 'Filemind', content: 'Content for card 1', imageUrl: "./filemind-1_1.png", hoverImageUrl: "./lume-1_1.png", clickFunc:() => handleClick('InHunt')  },
-    { title: 'Lume', content: 'Content for card 2', imageUrl: "./lume-1_1.png", hoverImageUrl: "./lume-1_1.png" },
-    { title: 'Card 3', content: 'Content for card 3', imageUrl: "./jellybreathe-1_1.png", hoverImageUrl: "./lume-1_1.png" },
-    { title: 'Card 4', content: 'Content for card 4', imageUrl: "./eno-1_1.png", hoverImageUrl: "./lume-1_1.png" },
-    { title: 'Card 5', content: 'Content for card 5', imageUrl: "./inhunt-1_1.png", hoverImageUrl: "./lume-1_1.png", clickFunc:() => handleClick('InHunt')},
-    { title: 'Card 5', content: 'Content for card 5', imageUrl: "./tmb-1_1.png", hoverImageUrl: "./lume-1_1.png" },
+  const projects = [
+    { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png", clickFunc: () => router.push('/filemind')  },
+    { title: 'Lume',content: '-', imageUrl: "./lume-1_1.png" },
+    { title: 'JellyBreathe', content: 'Take a break from work. A design for mild anxiety people.', imageUrl: "./jellybreathe-1_1.png"},
+    { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png",  clickFunc:() => handleClick('InHunt')},
+    { title: 'Huuu', content: 'Designing gloves that are more suitable for women in the workplace to alleviate cold hands and feet issues.', imageUrl: "./huuu-1_1.png"},
+    { title: 'the Melting Boundaries', content: 'Speculative Design based on social media data + genAI.', imageUrl: "./tmb-1_1.png", },
 
   ];
 
@@ -81,12 +82,13 @@ export default function Home() {
           <header className="flex justify-between items-center"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
-              width: '90%', marginLeft: '5%', marginRight: '5%', marginTop: '-100px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
+              width: '90%', marginLeft: '5%', marginRight: '5%', marginTop: '-40px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
               backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
             }}>
             <div className="flex items-center">
-              <Image
-                src="./head.png" alt="Logo" width={60} height={60} />
+              {/* <Image
+                src="./head.png" alt="Logo" width={60} height={60} /> */}
+                <p>Eranasu</p>
             </div>
 
 
@@ -103,32 +105,50 @@ export default function Home() {
 
           
           {/* my info */}
-          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px' }}>
+          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px',padding: '50px 0'  }}>
             <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD @Tencent</p>
+            <div className="flex gap-2 items-center mt-2">
             <motion.div className="h-4 w-4 bg-slate-800"></motion.div>
+            <p className="text-2x1 text-muted-foreground">I focus on space and perception within the digital realm.</p>
+            </div>
+
           </section>
 
+          {/* Projects */}
+          <div className="flex items-center justify-center mb-4 text-base text-slate-900 font-semibold">
+            Projects
+          </div>
           <div className="flex items-center justify-center min-h-screen ">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-              {cards.map((card, index) => (
-
-                <motion.div
-                  key={index}
-                  className="box w-60 h-60 bg-slate-200"
-                  whileHover={{ scale: 1.06 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                  style={{cursor:'pointer'}}
-                  onClick={card.clickFunc}
-                  
-                >
-                <img className="flex items-center justify-center bg-cover" src={card.imageUrl} alt="" />
-
-                </motion.div>
-
+              {projects.map((project, index) => (
+                <div>
+                  <motion.div
+                    key={index}
+                    className="box w-70 h-70 bg-slate-200"
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    style={{ cursor: 'pointer' }}
+                    onClick={project.clickFunc}
+                  >
+                    <img className="flex items-center justify-center bg-cover" src={project.imageUrl} alt="" />
+                  </motion.div>
+                  <p className="text-slate-900 mt-2 ml-2 text-xs">
+                    {project.title}
+                  </p>
+                  <p className="text-muted-foreground ml-2 mr-2 mb-8 text-xs">
+                    {project.content}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
+
+          {/* Experiments */}
+          <div className="flex items-center justify-center mb-4 mt-10 text-base text-slate-900 font-semibold">
+            Experiments
+          </div>
+
 
           
         </div>) : (
