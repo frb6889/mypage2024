@@ -79,11 +79,11 @@ export default function Home() {
         <div className="mainpage">
 
           {/* header */}
-          <header className="flex justify-between items-center"
+          <header className="flex justify-between items-center border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/30"
             style={{
               position: 'fixed', border: '0.4px solid #dddddd',
               width: '90%', marginLeft: '5%', marginRight: '5%', marginTop: '-40px', padding: 10, paddingLeft: 40, paddingRight: 40, zIndex: 1000, borderRadius: '10px',
-              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
+              /* backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)' */
             }}>
             <div className="flex items-center">
               {/* <Image
