@@ -106,6 +106,7 @@ export default function Home() {
           <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px' }}>
             <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD @Tencent</p>
+            <motion.div className="h-4 w-4 bg-slate-800"></motion.div>
           </section>
 
           <div className="flex items-center justify-center min-h-screen ">
