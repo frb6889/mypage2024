@@ -1,9 +1,6 @@
 ## README
-使用npm start可以本地运行，存在
-
-
-
-
+使用npm start可以本地运行
+有next config文件，需要改在线版直接git add commit push就行
 ## 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

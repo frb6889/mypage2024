@@ -122,7 +122,7 @@ export default function Home() {
           <div className="flex items-center justify-center min-h-screen ">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
               {projects.map((project, index) => (
-                <div>
+                <div key={index}>
                   <motion.div
                     key={index}
                     className="box w-70 h-70 bg-slate-200"
