@@ -102,7 +102,7 @@ export function FileMind() {
                         </Card>
                     </div>
                 </div>
-                <Image src="./inhunt-full.png" alt="inhunt-full" width={1200} />
+                <Image src="./inhunt-full.png" alt="inhunt-full" width={1200} height={2400} />
 
 
             </section>
