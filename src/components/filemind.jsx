@@ -75,7 +75,7 @@ export function FileMind() {
               <div class="p-8">
               <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
                 <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
-                    Filemind</h1>
+                    Filemind?????</h1>
                 <div>
                     {/* <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
                         <Card className="w-[450px]">
@@ -177,8 +177,8 @@ export function FileMind() {
 
 
             </section> */}
-            <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
-            <Image src="./filemind_design.png" alt="filemind-design" width={1500} />
+            {/* <Image src="./filemind_research.png" alt="filemind-research" width={1200} />
+            <Image src="./filemind_design.png" alt="filemind-design" width={1500} /> */}
 
 
         </main>

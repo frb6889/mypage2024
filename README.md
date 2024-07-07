@@ -1,5 +1,6 @@
 ## README
-使用npm start可以本地运行
+使用前如果用的node14，记得切换nvm use 18
+使用npm run dev可以本地运行
 有next config文件，需要改在线版直接git add commit push就行
 ## 
 

@@ -37,9 +37,9 @@ import InProgressComponent from "@/components/inprogress"
 export default function Filemind() {
   const router = useRouter();
 
-  const toHome = () => {
-    router.push('/');
-  }
+  const handleBack = () => {
+    router.back();
+  };
 
   const CircularCard = ({ children }) => (
     <div className="circular-card" style={{ width: '230px', height: '230px', backgroundColor: 'rgba(47, 114, 241, .1)', borderRadius: '50%', margin: '-10px' }}>
@@ -71,21 +71,30 @@ export default function Filemind() {
 
   return (
 
-    <main className="px-24 py-2" style={{color:'rgb(3, 8, 22)',backgroundColor:'babyblue'}}>
+    <main className="py-0">
       {/* 返回键 */}
-      <header className="flex justify-between items-center"
+      <header className="flex justify-between items-center m-2 mt-6"
         style={{
           position: 'fixed', border: '0.4px solid #dddddd',
-          margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-          backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
+          padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
+          backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)',cursor:'pointer',
+          marginLeft:'5%',
         }}>
-        <Image src="./back.png" alt="Logo" width={40} height={40} />
+        <Image src="./back.png" alt="Logo" width={40} height={40} onClick={handleBack} />
       </header>
+      
 
       {/* page */}
-      <section className="py-1 px-10 flex flex-col item-center text-left gap-3">
-        <h1 className="scroll-m-20 font-extrabold  lg:text-6xl" style={{ marginTop: '80px' }}>
-          Filemind</h1>
+      <div className="">
+        <div className="grid grid-cols-1">
+        <img className="flex items-center justify-center bg-cover" src="./filemind/filemind-long.png" alt="" />
+
+        </div>
+        </div>
+      <section className="py-0 px-0 flex flex-col  text-left gap-3">
+        <div>
+        
+        </div>
         <div>
           <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
             <Card className="w-[350px]">
@@ -117,7 +126,7 @@ export default function Filemind() {
 
           </div>
         </div>
-        <Image src="./filemind_research.png" alt="filemind-research" width={600}  />
+        {/* <Image src="./filemind_research.png" alt="filemind-research" width={600}  /> */}
 
       
       </section>
