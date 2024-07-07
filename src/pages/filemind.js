@@ -41,32 +41,12 @@ export default function Filemind() {
     router.back();
   };
 
-  const CircularCard = ({ children }) => (
-    <div className="circular-card" style={{ width: '230px', height: '230px', backgroundColor: 'rgba(47, 114, 241, .1)', borderRadius: '50%', margin: '-10px' }}>
-      <CardHeader>
-        <CardDescription style={{ marginTop: '28%', fontSize: '20px', marginLeft: '20px' }}>
-          {children}
-        </CardDescription>
-      </CardHeader>
-    </div>
-  );
+  const sections_sm = [
+    {title:'Working Process',content:'Started In November 2023<br />Lasted for 10 Months'},
+    {title:'Our Team',content:'4 Developers<br />1 Mentor<br />1 Designer(me)'},
+    {title:'My Role As Design Lead',content:'User Research And Interviews<br />Reviewed Relevant Papers<br />Low/high-fidelity Prototypes<br />Frontend Development'},
 
-  const PointCard = ({children}) => (
-    <Card style={{width:'180px',marginBottom:'20px'}}>
-              <CardHeader>
-                <CardTitle className="flex justify-center">
-                {children}
-                </CardTitle>
-              </CardHeader>
-            </Card>
-  )
-
-  const PainpointCard = ({ children }) => (
-    <div className="painpoint-card">
-      {children}
-    </div>
-  );
-
+  ]
 
 
   return (
@@ -96,33 +76,19 @@ export default function Filemind() {
         
         </div>
         <div>
-          <div className="flex justify-center item-center gap-6" style={{ marginTop: '20px' }}>
-            <Card className="w-[350px]">
-              <CardHeader>
-                <CardTitle>Working Process</CardTitle>
-                <CardDescription>Started In November 2023
-                  <br />Lasted for 10 Months</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="w-[350px]">
-              <CardHeader>
-                <CardTitle>Our Team</CardTitle>
-                <CardDescription>5 Developers
-                  <br />1 Mentor
-                  <br />1 Designer(me)</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="w-[350px]">
-              <CardHeader>
-                <CardTitle>My Role As Design Lead</CardTitle>
-                <CardDescription>
-                  User Research And Interviews
-                  <br />Reviewed Relevant Papers
-                  <br />Low/high-fidelity Prototypes
-                  <br />Frontend Development
-                </CardDescription>
-              </CardHeader>
-            </Card>
+          <div className="flex justify-center item-center gap-6 " style={{ marginTop: '20px' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3">
+            {sections_sm.map((sec, index) => (
+              <div key="index" className="w-60 h-30 bg-slate-200">
+                <p className="text-slate-900 mt-2 ml-2 text-xs">
+                  {sec.title}
+                </p>
+                <p className="text-muted-foreground ml-2 mr-2 mb-8 text-xs" dangerouslySetInnerHTML={{ __html: sec.content }}>
+                </p>
+              </div>
+            ))}
+            </div>
+            
 
           </div>
         </div>
