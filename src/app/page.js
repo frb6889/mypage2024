@@ -62,7 +62,7 @@ export default function Home() {
 
 
   const projects = [
-    { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png", clickFunc: () => router.push('/filemind')},
+    { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png", /* clickFunc: () => router.push('/filemind') */},
     { title: 'Lume',content: '-', imageUrl: "./lume-1_1.png" },
     { title: 'JellyBreathe', content: 'Take a break from work. A design for mild anxiety people.', imageUrl: "./jellybreathe-1_1.png"},
     { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png"},
@@ -120,12 +120,14 @@ export default function Home() {
 
           
           {/* my info */}
-          <section className="max-w-md mx-auto my-10 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px',padding: '50px 0'  }}>
-            <h1 className="text-4xl font-extrabold" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
+          <section className="flex my-0 flex-col justify-between items-center" style={{ marginTop: '50px', marginBottom: '50px',padding: '50px 0'  }}>
+            <div>
+            <h1 className="text-6xl font-extrabold mb-2" style={{ marginTop: '100px' }}>Erana(Yuran) Su</h1>
             <p className="text-2x1 text-muted-foreground">Product Designer@THU IAD @Tencent</p>
             <div className="flex gap-2 items-center mt-2">
             <motion.div className="h-4 w-4 bg-slate-800"></motion.div>
             <p className="text-sm text-muted-foreground">I focus on space and perception within the digital realm.</p>
+            </div>
             </div>
 
           </section>
