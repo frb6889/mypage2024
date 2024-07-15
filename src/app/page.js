@@ -62,7 +62,7 @@ export default function Home() {
 
 
   const projects = [
-    { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png", /* clickFunc: () => router.push('/filemind') */},
+    { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png" /* clickFunc: () => router.push('/filemind') */},
     { title: 'Lume',content: '-', imageUrl: "./lume-1_1.png" },
     { title: 'JellyBreathe', content: 'Take a break from work. A design for mild anxiety people.', imageUrl: "./jellybreathe-1_1.png"},
     { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png"},
