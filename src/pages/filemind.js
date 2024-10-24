@@ -78,7 +78,7 @@ export default function Filemind() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 px-4 gap-2 " style={{ width: '90%' }}>
             <div className="w-200">
               <h1 className="text-slate-900 mt-2 mb-0 ml-2 text-5xl font-extrabold">Filemind.ai</h1>
-              <p className="text-slate-900 mt-0 ml-2 text-sm">Settling your documents with a<br /> transparent and explainable RAG AI system.</p>
+              <p className="text-slate-900 mt-0 ml-2 text-sm">Settling mass documents with a<br /> transparent and explainable RAG AI system.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2" style={{ borderLeft: '1px solid #000000' }}>
@@ -100,16 +100,20 @@ export default function Filemind() {
 
         {/* Overview */}
         <div className="flex justify-center item-center" style={{}}>
-          <div className="px-4 gap-2 " style={{ width: '90%' }}>
+          <div className="px-4 gap-2 item-center justify-between" style={{ width: '90%' }}>
             <h1 className="text-slate-900 mt-2 mb-0 text-2xl font-semibold">Background</h1>
             <p className="text-slate-700 mt-2 mb-8 text-sm">
               Filemind源自我和我来自清华Pervasive HCI Lab的合作者们的业务需求。我们将之发展成了独立的项目，并且进行了界面设计方式的效用研究。<br />
               我们的目标是设计一个更实用的检索增强AI的工具帮助用户更快捷方便地应对大量文件信息。<br />
               我在2023年11月加入这个团队，当时我们刚刚接到来自CCXI等公司的需求，完成这项任务。我从零开始承担了该项目的用户研究以及界面设计工作；<br />
               并在后期协调开发人员进行项目落地，在前端上做了工作。<br />
-              全部设计功能在2024年5月开发完毕。【此处可添加那张组会图片：项目开发过程】<br />
-              我们设计了许多帮助用户快速地提炼信息的feature。我们称之为three P system: xx;xx.<br />
+              全部设计功能在2024年5月开发完毕，并邀请文书人员参与测试。<br />
             </p>
+            <Image src="./filemind/fm-photo.jpg" width={400} height={300} className="w-80 h-60 items-center" />
+            <p className="text-slate-600 mt-2 mb-8 text-sm">在组会上讨论研发进展</p>
+            <p className="text-slate-700 mt-2 mb-8 text-sm">
+              我们设计了许多帮助用户快速地提炼信息的feature。我们称之为three P system: Purpose,Process and Performance.
+              【这里需要一张大图来强调3P】</p>
 
           </div>
         </div>
@@ -127,7 +131,7 @@ export default function Filemind() {
               财务人员：我需要处理大量的重复性表格，并**反复检查以保证他们的准确性**。<br />
               学校教授学生：在做学术研究前期调研工作的时候，我需要大量阅读论文，提炼其中**与我的研究有关**的论点。
             </p>
-
+          
           </div>
         </div>
         {/* 研究 */}
@@ -136,10 +140,33 @@ export default function Filemind() {
             <h1 className="text-slate-900 mt-2 mb-0 text-2xl font-semibold">Research</h1>
             <h1 className="text-slate-900 mb-0 text-2xl font-semibold">...</h1>
             <p className="text-slate-900 mt-2 mb-8 text-sm">
-            Semi-structure Interviews：前文已经提到，23.11月-24.1 12人。我们咨询这些人借助工具去整理文件的意愿
-            Contextual Inquiry：15人。在第一轮开发完成(2024.5)之后我们邀请了校内外的研究员、财务人员来试用我们的平台，观察他们的行为
-            think aloud:2024.6.我们邀请了一些校内的文职人员试用我们的系统。并说出自己的使用体验。
-
+            Semi-structure Interviews：前文已经提到，23.11月-24.1 12人。我们咨询这些人借助工具去整理文件的意愿<br />
+            Contextual Inquiry：15人。在第一轮开发完成(2024.5)之后我们邀请了校内外的研究员、财务人员来试用我们的平台，观察他们的行为<br />
+            think aloud:2024.6.我们邀请了一些校内的文职人员试用我们的系统。并说出自己的使用体验。<br />
+            【这里可以放三张图来说明】
+            </p>
+            <p className="text-slate-900 mt-2 mb-8 text-sm">
+            After synthesizing information we gathered from surveys and interviews, we identified 3 top reasons that further guided us in defining the design opportunity:
+            【讲设计机会三张图】<br />
+            1. 在一个项目初起，寻找相关资料的过程很麻烦，耽误时间<br />
+            2. 用户疲于处理大量重复、机械性的文件信息<br />
+            3. 对于文档中与自身研究相关性较强的内容需要有深入的理解和阅读<br />
+            </p>
+            <h1 className="text-slate-900 mb-0 text-2xl font-semibold">繁琐的大量文件管理过程如果被自动化，可以大大提升文职人员的工作效率。如何自动化？</h1>
+            <p className="text-slate-900 mt-2 mb-8 text-sm">
+              所以我们迅速locate了一个解决方案：</p>
+            <h1 className="text-slate-900 mb-0 text-xl font-semibold">
+              我们确定了我们的设计方针：构建一个可信的，全链路的AI文件管理工具。利用AI将文件管理自动化，与此同时留足“链路”，让用户可以快速根据几个关键词定位文件内容和位置。
+            </h1>
+              <p className="text-slate-900 mt-2 mb-8 text-sm">
+            我们发现目前发展迅速的AI工具可以作为解决<br />
+            【讲利用AI可以解决的问题】<br />
+            我们首先确定要展示-透明链路<br /><br />
+            
+            1.三个展示策略帮助用户确认AI对文件理解的正确性<br />
+            2.一套便捷的链路让用户直接根据AI返回的结果定位源文件中对应的位置<br />
+            【竞品的思路：因为无法直接在软件内打开原文件，我通常让ai概括文档内容后，复制感兴趣的关键词回到原文件搜索关键词；或者直接让AI告诉我对应的内容在几行几列。】
+            3.对原文件内容的深入解释
             </p>
           </div>
         </div>
