@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from "react"
-import { useState } from "react"
+
 
 
 //framer motion
@@ -11,19 +11,12 @@ import Image from "next/image"
 //import { useNavigation } from "next/navigation"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+
 
 import { FaLinkedin } from 'react-icons/fa';
-import { AspectRatioDemo } from "@/components/apic"
 import './style.css';
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import InProgressComponent from "@/components/inprogress"
-import DoneComponent from "@/components/done"
 
-//单独页面
-import FileMind from "@/components/filemind"
-import InHunt from "@/components/inhunt"
-import Eno from "@/components/eno"
+
 
 /* 
 git add .
@@ -65,7 +58,8 @@ export default function Home() {
     { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png" , clickFunc: () => router.push('/filemind')},
     { title: 'NEO Desktop Interface',content: 'Designed for the Brain-Computer Interface (BCI) Product of Neuracle', imageUrl: "./neuracle-1_1.png" },
     { title: 'JellyBreathe', content: 'Take a break from work. A design for mild anxiety people.', imageUrl: "./jellybreathe-1_1.png"},
-    { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png"},
+    /* { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png"}, */
+    { title: 'Im Jacks breathing soul', content: 'Exploration of Exhibition Design for Species Conservation.', imageUrl: "./jack/cover-1.png",clickFunc: () => router.push('/imjacksbreathingsoul')},
     { title: 'Huuu', content: 'Designing gloves that are more suitable for women in the workplace to alleviate cold hands and feet issues.', imageUrl: "./huuu-1_1.png"},
     { title: 'the Melting Boundaries', content: 'Speculative Design based on social media data + genAI.', imageUrl: "./tmb-1_1.png", },
 
@@ -92,7 +86,7 @@ export default function Home() {
   return (
 
     <main className="py-2">
-      {!showReview ? (
+      
         <div className="mainpage">
 
           {/* header */}
@@ -192,25 +186,7 @@ export default function Home() {
 
 
           
-        </div>) : (
-        <div style={{ color: 'rgb(3, 8, 22)', backgroundColor: 'babyblue' }}>
-          {/* 返回键 */}
-          <header className="flex justify-between items-center"
-            style={{
-              position: 'fixed', border: '0.4px solid #dddddd',
-              margin: 0, padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-              backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)'
-            }}>
-            <Image src="./back.png" onClick={() => setShowReview(false)} alt="Logo" width={40} height={40} />
-          </header>
-          {/* 条件渲染selectedComponent对应的组件 */}
-          {
-            selectedComponent === 'FileMind' ? <FileMind /> :
-              selectedComponent === 'InHunt' ? <InHunt /> :
-                selectedComponent === 'Eno' ? <Eno /> : null
-          }
         </div>
-      )}
     </main>
   );
 }
