@@ -3,37 +3,13 @@
 import * as React from "react"
 import '../app/style.css';
 import 'tailwindcss/tailwind.css';
-import { Button } from "@/components/ui/button";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
-import { cn } from "@/lib/utils";
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
-import { MoveLeftIcon, AlignLeftIcon, ArrowLeftIcon } from "lucide-react";
 
+import ReturnButton from "@/components/return_button";
 
-import { FaLinkedin } from 'react-icons/fa';
-import { AspectRatioDemo } from "@/components/apic"
-import { AspectRatio } from "../components/ui/aspect-ratio"
-import InProgressComponent from "@/components/inprogress"
 
 
 export default function Jack() {
@@ -50,14 +26,7 @@ export default function Jack() {
 
     <main className="py-0 bg-black text-stone-50 leading-loose">
       {/* 返回键 */}
-      <header className="flex justify-between items-center m-2 mt-12 ml-12 p-4 border-stone-200 bg-stone-600/50"
-        style={{
-          position: 'fixed',
-          zIndex: 1000, borderRadius: '50%',
-          backdropFilter: 'blur(8px)', cursor: 'pointer',
-        }}>
-        <ArrowLeftIcon width={20} height={20} className="text-yellow-200" onClick={handleBack} />
-      </header>
+      <ReturnButton handleBack={handleBack} iconColor='text-yellow-200' borderColor='border-stone-200' bgColor='bg-stone-600/50'/>
 
 
       {/* page */}

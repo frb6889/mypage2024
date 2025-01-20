@@ -34,29 +34,14 @@ export default function Home() {
     window.open(linkedInUrl, '_blank');
   };
 
-  const toPIgroupWebsite = () => {
-    const PIurl = "https://pi.cs.tsinghua.edu.cn/";
-    window.open(PIurl, '_blank');
-  }
-
-  const [showReview, setShowReview] = React.useState(false);
-  const [selectedComponent, setSelectedComponent] = React.useState(null);
-
-
-  // 点击表格中的 "accounting" 单元格时，显示新的界面
-  const handleClick = (component) => {
-    setShowReview(true); // Set showReview to true to display review section
-    setSelectedComponent(component); // Set the selected component
-  };
-
-  const [open, setOpen] = React.useState(false)
-
-  const resumePdfUrl = "./resume_CN.pdf";
+  const resumePdfUrl = "./resume_CN_2025.pdf";
+  const tsingOverflowUrl = "./TsingOverflow.pdf";
 
 
   const projects = [
     { title: 'Filemind', content: 'A trustworthy AI(RAG) application design based on my HCI research and technology in Tsinghua PI Lab.', imageUrl: "./filemind-1_1.png" , clickFunc: () => router.push('/filemind')},
-    { title: 'NEO Desktop Interface',content: 'Designed for the Brain-Computer Interface (BCI) Product of Neuracle', imageUrl: "./neuracle-1_1.png" },
+    /* { title: 'NEO Desktop Interface',content: 'Designed for the Brain-Computer Interface (BCI) Product of Neuracle', imageUrl: "./neuracle-1_1.png" }, */
+    { title: 'TsingOverflow-新版清答疑',content: 'Online Q&A Process Optimization Design and Implementation for Tsinghua University Students', imageUrl: "./tsingoverflow-1_1.png",clickFunc: () => window.open(tsingOverflowUrl, '_blank')},
     { title: 'JellyBreathe', content: 'Take a break from work. A design for mild anxiety people.', imageUrl: "./jellybreathe-1_1.png"},
     /* { title: 'Fluidity', content: 'Smart spatial design for regulating visitors Flow between tourist attractions and residential areas.', imageUrl: "./fluidity-1_1.png"}, */
     { title: 'Im Jacks breathing soul', content: 'Exploration of Exhibition Design for Species Conservation.', imageUrl: "./jack/cover-1.png",clickFunc: () => router.push('/imjacksbreathingsoul')},

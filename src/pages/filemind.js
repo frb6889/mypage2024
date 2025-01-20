@@ -3,36 +3,9 @@
 import * as React from "react"
 import '../app/style.css';
 import 'tailwindcss/tailwind.css';
-import { Button } from "@/components/ui/button";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
-import { cn } from "@/lib/utils";
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-
-
-import { FaLinkedin } from 'react-icons/fa';
-import { AspectRatioDemo } from "@/components/apic"
-import { AspectRatio } from "../components/ui/aspect-ratio"
-import InProgressComponent from "@/components/inprogress"
-
+import ReturnButton from "@/components/return_button";
 
 export default function Filemind() {
   const router = useRouter();
@@ -53,15 +26,8 @@ export default function Filemind() {
 
     <main className="py-0">
       {/* 返回键 */}
-      <header className="flex justify-between items-center m-2 mt-6"
-        style={{
-          position: 'fixed', border: '0.4px solid #dddddd',
-          padding: 0, zIndex: 1000, borderRadius: '50%', padding: '10px',
-          backdropFilter: 'blur(8px)', backgroundColor: 'rgba(255, 255, 255, 0.5)', cursor: 'pointer',
-          marginLeft: '5%',
-        }}>
-        <Image src="./back.png" alt="Logo" width={40} height={40} onClick={handleBack} />
-      </header>
+      <ReturnButton handleBack={handleBack} iconColor='text-slate-900' borderColor='border-slate-900' bgColor='bg-slate-200/50'/>
+
 
 
       {/* page */}
